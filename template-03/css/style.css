@@ -3,7 +3,7 @@
     font-family: "Arial-Bold";
     font-style: normal;
     font-weight: 700;
-    /* src: url("/fonts/FontsFree-Net-arial-bold.ttf") format("truetype"); */
+    src: url("/fonts/FontsFree-Net-arial-bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -15,19 +15,20 @@
 
 html,
 body,
-main,
+.content-section,
 footer {
     margin: 0;
     padding: 0;
 }
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-attachment: fixed !important;
-    background-size: auto 81%;
+    /* background-size: auto 81%; */
     background-position: bottom;
     background-repeat: no-repeat;
+    transition: .5s;
 }
 
 html,
@@ -40,10 +41,6 @@ body,
 .page-dashboard {
     min-height: 15vh;
     background: var(--white);
-}
-
-header .container-fluid {
-    height: 100%;
 }
 
 header .header-center {
@@ -60,6 +57,10 @@ header .left-logo-sec-right img {
     width: auto !important;
 }
 
+.navbar-header {
+    display: none;
+}
+
 .navbar-toggler,
 .navbar-toggler:visited,
 .navbar-toggler:active,
@@ -69,6 +70,10 @@ header .left-logo-sec-right img {
 .navbar-toggler.collapsed:active,
 .navbar-toggler.collapsed:focus {
     border: none !important;
+}
+
+.content-section {
+    border: thin solid red;
 }
 
 .page footer,
@@ -93,13 +98,76 @@ header .left-logo-sec-right img {
     background-color: var(--denim);
     padding: 0.5px 0;
     color: var(--white);
-    box-shadow: 0 .1rem 0 var(--yellow-sunshine), 0 -.1rem 0 var(--yellow-sunshine);
+    box-shadow: 0 .15rem 0 var(--yellow-sunshine), 0 -.15rem 0 var(--yellow-sunshine);
 }
+
+.overlap-chat {
+    position: fixed;
+    z-index: 5;
+}
+
+.overlap-chat .welcome-sec {
+    background-color: var(--yellow-sunshine);
+    border-radius: 15px;
+    padding: .1rem 1rem .2rem 1rem;
+    margin-bottom: 5px;
+}
+
+.chat-bot-image {
+    width: 5.5rem;
+}
+
+img.double-logo {
+    display: initial;
+}
+
+img.single-logo {
+    display: none;
+}
+
+#ura-nav {
+    border: thin solid transparent;
+}
+
+#content-section-1 {
+    min-height: 80vh;
+    border: thin solid blue;
+}
+
+
+/* --- Carousel --- */
+
+#page-slider .caro-item {
+    display: flex;
+    align-items: flex-end;
+}
+
+.owl-dots {
+    margin-top: 1em;
+}
+
+.owl-carousel button.owl-dot {
+    border: 2.5px solid #fff;
+    padding: .3em !important;
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.owl-carousel button.owl-dot.active {
+    background-color: #fff;
+}
+
+
+/* --- / End carousel */
 
 @media screen and (max-width: 900px) {
     header .header-center,
     .desktop-display {
         display: none !important;
+    }
+    .navbar-header {
+        display: initial;
     }
     header .left-logo-sec-left,
     header .left-logo-sec-left {

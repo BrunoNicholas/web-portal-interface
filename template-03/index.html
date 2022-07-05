@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome : URA</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/guide.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"><\/script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"><\/script><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');
+    </script>
+</head>
+
+<body>
+    <div class="page d-flex flex-column bd-highlight" style="background-image: url('images/tower.jpg');">
+        <header>
+            <div class="container-fluid d-flex justify-content-between">
+                <div class="header-left d-flex justify-content-center align-items-center">
+                    <div class="row cursor-pointer" onclick="window.open('/', '_self')">
+                        <div class="col left-logo-sec-left d-flex justify-content-center align-items-center">
+                            <img src="images/logo.png" class="double-logo" alt="URA logo">
+                            <img src="images/logo-single.png" class="single-logo" alt="URA logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-center d-flex justify-content-end align-items-center">
+                    <div class="client-relationship-management-portal arial-bold-congress-blue-25px mt-4">
+                        CLIENT RELATIONSHIP MANAGEMENT PORTAL
+                    </div>
+                </div>
+                <div class="header-right left-logo-sec-right d-flex justify-content-center align-items-center">
+                    <img class="path-1392" src="images/care-img-preview.png">
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg" id="navbar-section">
+            <div class="container-fluid">
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#ura-nav" aria-controls="ura-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> CRM PORTAL
+                </button>
+                <div class="collapse navbar-collapse" id="ura-nav">
+
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active text-white" aria-current="page">
+                                <img src="images/phone@1x.png" style="width: 15px;" class="mb-1" alt=""> TOLL FREE NUMBER: 0800 117 000
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active text-white" aria-current="page">
+                                <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> WHATSAPP NUMBER: 0772 140 000
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="content-section" class="main flex-grow-1">
+
+
+
+        </section>
+        <footer>
+            <div class="container">
+
+            </div>
+        </footer>
+        <script src="js/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+
+        <script>
+            let showChatText = false;
+            $('.chat-bot-image').click(function(e) {
+                e.preventDefault();
+                if (showChatText) {
+                    $('.welcome-sec').css('display', 'none');
+                } else {
+                    $('.welcome-sec').css('display', 'initial');
+                }
+                showChatText = !showChatText;
+            })
+        </script>
+</body>
+
+</html>

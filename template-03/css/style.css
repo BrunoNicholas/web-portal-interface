@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400|Roboto:400,500");
+@font-face {
+    font-family: "Arial-Bold";
+    font-style: normal;
+    font-weight: 700;
+    /* src: url("/fonts/FontsFree-Net-arial-bold.ttf") format("truetype"); */
+}
+
+@font-face {
+    font-family: "Arial-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/arial.otf") format("opentype");
+}
+
+html,
+body,
+main,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    background-attachment: fixed !important;
+    background-size: auto 81%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+html,
+body,
+.page {
+    overflow: hidden;
+}
+
+.page header,
+.page-dashboard {
+    min-height: 15vh;
+    background: var(--white);
+}
+
+header .container-fluid {
+    height: 100%;
+}
+
+header .header-center {
+    flex-grow: 1;
+}
+
+header .left-logo-sec-left img {
+    height: 12vh !important;
+    width: auto !important;
+}
+
+header .left-logo-sec-right img {
+    height: 12vh !important;
+    width: auto !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:visited,
+.navbar-toggler:active,
+.navbar-toggler:focus,
+.navbar-toggler.collapsed,
+.navbar-toggler.collapsed:visited,
+.navbar-toggler.collapsed:active,
+.navbar-toggler.collapsed:focus {
+    border: none !important;
+}
+
+.page footer,
+.page-dashboard footer {
+    text-align: center;
+    background-color: var(--yellow-sunshine);
+    padding: .3rem;
+    color: var(--denim);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.footer .container {
+    letter-spacing: 0;
+    line-height: 10px;
+    white-space: nowrap;
+}
+
+#navbar-section {
+    background-color: var(--denim);
+    padding: 0.5px 0;
+    color: var(--white);
+    box-shadow: 0 .1rem 0 var(--yellow-sunshine), 0 -.1rem 0 var(--yellow-sunshine);
+}
+
+@media screen and (max-width: 900px) {
+    header .header-center,
+    .desktop-display {
+        display: none !important;
+    }
+    header .left-logo-sec-left,
+    header .left-logo-sec-left {
+        justify-content: flex-start !important;
+    }
+    img.double-logo {
+        display: none;
+    }
+    img.single-logo {
+        display: initial;
+    }
+    .page footer {
+        padding: .3rem;
+    }
+}

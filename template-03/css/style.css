@@ -57,19 +57,29 @@ header .left-logo-sec-right img {
     width: auto !important;
 }
 
+.reflector {
+    transform: rotateY(-180deg);
+}
+
+#header-navbar {
+    border-bottom: thin solid var(--denim);
+}
+
+#header-navbar .nav-item .nav-link {
+    color: var(--denim);
+}
+
 .navbar-header {
     display: none;
 }
 
 .navbar-toggler,
-.navbar-toggler:visited,
-.navbar-toggler:active,
 .navbar-toggler:focus,
-.navbar-toggler.collapsed,
-.navbar-toggler.collapsed:visited,
-.navbar-toggler.collapsed:active,
-.navbar-toggler.collapsed:focus {
-    border: none !important;
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
 }
 
 .content-section {
@@ -145,7 +155,7 @@ img.single-logo {
 }
 
 #page-slider .caro-item {
-    height: 96vh;
+    height: 100vh;
     display: flex;
     align-items: flex-end;
     border: thin solid var(--denim);
@@ -155,19 +165,22 @@ img.single-logo {
 }
 
 .owl-dots {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: 20%;
+    margin-left: 40%;
     z-index: 1;
     border: thin solid green;
     background-color: transparent;
+    bottom: 1rem;
+    text-align: center;
 }
 
 .owl-carousel button.owl-dot {
-    /* border: 2.5px solid #fff; */
-    padding: .3em !important;
+    border: 2.5px solid #fff;
+    padding: .5em !important;
     border-radius: 50%;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 
 .owl-carousel button.owl-dot.active {
@@ -192,10 +205,26 @@ img.single-logo {
     .navbar-header {
         display: initial;
     }
+    #header-navbar {
+        display: none;
+    }
     header .left-logo-sec-left,
     header .left-logo-sec-left {
         justify-content: flex-start !important;
     }
+    /* --- homepage carousel --- */
+    #content-section-1 {
+        position: initial;
+        height: 50vh;
+    }
+    #page-slider .caro-item {
+        height: 50vh;
+    }
+    .owl-dots {
+        width: 50%;
+        margin-left: 25%;
+    }
+    /* --- / homepage carousel --- */
     img.double-logo {
         display: none;
     }

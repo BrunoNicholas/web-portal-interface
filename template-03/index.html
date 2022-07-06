@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome : URA</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/owlcarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/owlcarousel/css/owl.theme.default.min.css">
@@ -20,119 +21,130 @@
 
 <body>
     <div class="page d-flex flex-column bd-highlight" style="background-image: url('images/tower.jpg');">
-        <header class="d-flex flex-column">
-            <div class="container mb-3">
-                <nav class="navbar navbar-expand-lg" id="header-navbar">
-                    <div class="collapse navbar-collapse" id="ura-nav">
-                        <ul class="navbar-nav me-auto mb-lg-0">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link" aria-current="page">
-                                    <span class="fa fa-phone reflector" style="width: 15px; color: var(--denim)" aria-hidden="true"></span> TOLL FREE NUMBER: 0800 117 000
+        <div class="p-0 m-0 p-fixed w-100" id="header-varia">
+            <header class="d-flex flex-column">
+                <div class="container mb-3">
+                    <nav class="navbar navbar-expand-lg" id="header-navbar">
+                        <div class="collapse navbar-collapse" id="ura-nav">
+                            <ul class="navbar-nav me-auto mb-lg-0">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" aria-current="page">
+                                        <span class="fa fa-phone" style="width: 15px; color: var(--denim)" aria-hidden="true"></span> TOLL FREE NUMBER: 0800 117 000
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" aria-current="page">
+                                        <span class="fab fa-whatsapp" style="width: 15px; color: var(--denim)" aria-hidden="true"></span> WHATSAPP NUMBER: 0772 140 000
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Languages
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="container flex-grow-1 d-flex justify-content-between">
+                    <div class="header-left d-flex justify-content-center align-items-center">
+                        <div class="row cursor-pointer" onclick="window.open('/', '_self')">
+                            <div class="col left-logo-sec-left d-flex justify-content-center align-items-center">
+                                <img src="images/logo-transparent.png" class="double-logo" alt="URA logo">
+                                <img src="images/logo-single.png" class="single-logo" alt="URA logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-center d-flex justify-content-end align-items-center">
+
+                    </div>
+                    <div class="header-right left-logo-sec-right d-flex justify-content-center align-items-center">
+
+                    </div>
+                </div>
+            </header>
+            <nav class="navbar navbar-expand-md navbar-static ms-navbar ms-navbar-primary" id="navbar-section">
+                <div class="container-fluid container-full">
+                    <div class="navbar-header">
+                        <a class="navbar-brand text-white" href="index.html">
+                            <span class="ms-title">Uganda Revenue Authority</span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler text-white pl-0 pr-0" type="button" data-bs-toggle="collapse" data-bs-target="#ura-nav" aria-controls="ura-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="ura-nav">
+                        <ul class="navbar-nav me-auto mb-lg-0 mx-auto">
+                            <li class="nav-item dropdown active">
+                                <a href="#" class="nav-link active text-white" aria-current="page">
+                                    <!-- <img src="images/phone@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    INDIVIDUALS
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link" aria-current="page">
-                                    <span class="fa fa-whatsapp" style="width: 15px; color: var(--denim)" aria-hidden="true"></span> WHATSAPP NUMBER: 0772 140 000
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    COMPANIES
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    AGENTS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    GUIDANCE
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    DOMESTIC TAX
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    NON-TAX SERVICES
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    ENGAGEMENTS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    LEGAL & POLICIES
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    NOTICES
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" aria-current="page">
+                                    <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
+                                    ABOUT US
                                 </a>
                             </li>
                         </ul>
-                        <button>Language</button>
-                    </div>
-                </nav>
-            </div>
-            <div class="container flex-grow-1 d-flex justify-content-between">
-                <div class="header-left d-flex justify-content-center align-items-center">
-                    <div class="row cursor-pointer" onclick="window.open('/', '_self')">
-                        <div class="col left-logo-sec-left d-flex justify-content-center align-items-center">
-                            <img src="images/logo-transparent.png" class="double-logo" alt="URA logo">
-                            <img src="images/logo-single.png" class="single-logo" alt="URA logo">
-                        </div>
                     </div>
                 </div>
-                <div class="header-center d-flex justify-content-end align-items-center">
-
-                </div>
-                <div class="header-right left-logo-sec-right d-flex justify-content-center align-items-center">
-
-                </div>
-            </div>
-        </header>
-        <nav class="navbar navbar-expand-md navbar-static ms-navbar ms-navbar-primary" id="navbar-section">
-            <div class="container-fluid container-full">
-                <div class="navbar-header">
-                    <a class="navbar-brand text-white" href="index.html">
-                        <span class="ms-title">Uganda Revenue Authority</span>
-                    </a>
-                </div>
-                <button class="navbar-toggler text-white pl-0 pr-0" type="button" data-bs-toggle="collapse" data-bs-target="#ura-nav" aria-controls="ura-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="ura-nav">
-                    <ul class="navbar-nav me-auto mb-lg-0 mx-auto">
-                        <li class="nav-item dropdown active">
-                            <a href="#" class="nav-link active text-white" aria-current="page">
-                                <!-- <img src="images/phone@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                INDIVIDUALS
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                COMPANIES
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                AGENTS
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                GUIDANCE
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                DOMESTIC TAX
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                NON-TAX SERVICES
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                ENGAGEMENTS
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                LEGAL & POLICIES
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                NOTICES
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                ABOUT US
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <section id="content-section-1" class="content-section flex-grow-1 d-flex flex-column">
             <div class="flex-grow-1 d-flex flex-column owl-carousel text-center" id="page-slider">
                 <div class="caro-item w-100 flex-grow-1" style="background-image:url('images/katikkiro.jpg');"> My Content </div>
@@ -155,48 +167,53 @@
 
             </div>
         </footer>
-        <script src="js/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-        <!-- 
-            <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-        -->
-        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="plugins/owlcarousel/js/owl.carousel.min.js"></script>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/owlcarousel/js/owl.carousel.min.js"></script>
 
-        <script>
-            let showChatText = false;
-            $('.chat-bot-image').click(function(e) {
-                e.preventDefault();
-                if (showChatText) {
-                    $('.welcome-sec').css('display', 'none');
-                } else {
-                    $('.welcome-sec').css('display', 'initial');
-                }
-                showChatText = !showChatText;
-            });
-            $(document).ready(function() {
-                $(".main-carousel").owlCarousel();
+    <script>
+        const headVaria = document.getElementById('header-varia').clientHeight;
+        let showChatText = false;
+        $('.chat-bot-image').click(function(e) {
+            e.preventDefault();
+            if (showChatText) {
+                $('.welcome-sec').css('display', 'none');
+            } else {
+                $('.welcome-sec').css('display', 'initial');
+            }
+            showChatText = !showChatText;
+        });
 
-                (function($) {
-                    var carousel_options = {
-                        margin: 0,
-                        dots: true,
-                        nav: true,
-                        loop: true,
-                        center: true,
-                        items: 1,
-                        autoplay: true,
-                        slideTransition: "cubic-bezier(0,.3,.51,1.05)",
-                        // animateOut: 'animate__slideOutDown',
-                        smartSpeed: 500,
-                        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
-                    };
-                    $('#page-slider').owlCarousel(carousel_options);
-                })(jQuery);
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            let topMenu = $('#header-navbar').parent('.container');
+            topMenu.css('display', 'none');
+            $('#content-section-1').css('margin-top', `${headVaria}px`);
+        }
+        $(document).ready(function() {
+            $(".main-carousel").owlCarousel();
 
-                $('.owl-nav').addClass('container');
-            });
-        </script>
+            (function($) {
+                var carousel_options = {
+                    margin: 0,
+                    dots: true,
+                    nav: true,
+                    loop: true,
+                    center: true,
+                    items: 1,
+                    autoplay: true,
+                    slideTransition: "cubic-bezier(0,.3,.51,1.05)",
+                    // animateOut: 'animate__slideOutDown',
+                    smartSpeed: 500,
+                    navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+                };
+                $('#page-slider').owlCarousel(carousel_options);
+            })(jQuery);
+
+            $('.owl-nav').addClass('container');
+        });
+    </script>
 </body>
 
 </html>

@@ -166,25 +166,56 @@ img.single-logo {
 
 .owl-dots {
     position: absolute;
-    width: 20%;
-    margin-left: 40%;
-    z-index: 1;
-    border: thin solid green;
-    background-color: transparent;
+    align-self: center;
     bottom: 1rem;
-    text-align: center;
 }
 
 .owl-carousel button.owl-dot {
-    border: 2.5px solid #fff;
+    border: 3px solid #fff;
     padding: .5em !important;
     border-radius: 50%;
+    margin: auto;
     margin-left: .5em;
     margin-right: .5em;
+    background-color: var(--yellow-sunshine);
 }
 
 .owl-carousel button.owl-dot.active {
-    background-color: var(--yellow-sunshine);
+    border: 2px solid #fff;
+    background-color: var(--denim);
+}
+
+.owl-nav {
+    align-self: center;
+    position: absolute;
+    bottom: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-nav>button {
+    background-color: #c7c9cb !important;
+    border: thin solid var(--yellow-sunshine) !important;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-nav>button svg {
+    font-size: 1.5rem;
+    color: var(--denim);
+}
+
+.owl-nav>button:hover {
+    background-color: var(--denim) !important;
+    border: thin solid var(--denim) !important;
+}
+
+.owl-nav>button svg:hover {
+    color: #c7c9cb;
 }
 
 
@@ -220,9 +251,8 @@ img.single-logo {
     #page-slider .caro-item {
         height: 50vh;
     }
-    .owl-dots {
-        width: 50%;
-        margin-left: 25%;
+    .owl-nav {
+        bottom: 50%;
     }
     /* --- / homepage carousel --- */
     img.double-logo {

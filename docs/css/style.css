@@ -264,6 +264,9 @@ img.single-logo {
     .owl-nav {
         display: none;
     }
+    .owl-carousel button.owl-dot {
+        padding: .3em !important;
+    }
     /* --- / homepage carousel --- */
     img.double-logo {
         display: none;

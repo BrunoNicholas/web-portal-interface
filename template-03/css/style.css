@@ -23,24 +23,24 @@ footer {
 
 .page {
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-attachment: fixed !important;
-    /* background-size: auto 81%; */
+    background-size: auto 100%;
     background-position: bottom;
     background-repeat: no-repeat;
     transition: .5s;
-}
-
-html,
-body,
-.page {
-    overflow: hidden;
+    isolation: isolate;
 }
 
 .page header,
 .page-dashboard {
     min-height: 15vh;
     background: var(--white);
+}
+
+.page header {
+    background-color: transparent;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
 }
 
 header .header-center {
@@ -130,24 +130,40 @@ img.single-logo {
 }
 
 #content-section-1 {
-    min-height: 80vh;
-    border: thin solid blue;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
 }
 
 
 /* --- Carousel --- */
 
+#page-slider {
+    height: 100%;
+}
+
 #page-slider .caro-item {
+    height: 96vh;
     display: flex;
     align-items: flex-end;
+    border: thin solid var(--denim);
+    background-size: auto 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .owl-dots {
-    margin-top: 1em;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    border: thin solid green;
+    background-color: transparent;
 }
 
 .owl-carousel button.owl-dot {
-    border: 2.5px solid #fff;
+    /* border: 2.5px solid #fff; */
     padding: .3em !important;
     border-radius: 50%;
     margin-left: 1em;
@@ -155,11 +171,18 @@ img.single-logo {
 }
 
 .owl-carousel button.owl-dot.active {
-    background-color: #fff;
+    background-color: var(--yellow-sunshine);
 }
 
 
-/* --- / End carousel */
+/* --- / End carousel --- */
+
+#content-section-2 {
+    margin-top: 100vh;
+}
+
+
+/* --- Media queries --- */
 
 @media screen and (max-width: 900px) {
     header .header-center,

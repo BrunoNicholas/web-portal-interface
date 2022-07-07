@@ -103,6 +103,9 @@ header .left-logo-sec-right img {
     white-space: nowrap;
 }
 
+
+/* --- Edit Navbar --- */
+
 #navbar-section {
     background-color: var(--denim);
     padding: 0;
@@ -111,9 +114,6 @@ header .left-logo-sec-right img {
     border-radius: 0;
     box-shadow: 0 .15rem 0 var(--yellow-sunshine), 0 -.15rem 0 var(--yellow-sunshine);
 }
-
-
-/* --- Edit Navbar --- */
 
 #navbar-section ul.navbar-nav li a {
     columns: var(--white);
@@ -145,7 +145,7 @@ header .left-logo-sec-right img {
 }
 
 #navbar-section .navbar-nav>li>a {
-    margin: .2rem 0;
+    margin: .2rem;
 }
 
 #navbar-section .navbar-nav>li:hover,
@@ -156,6 +156,37 @@ header .left-logo-sec-right img {
 #navbar-section .navbar-nav>li>a:focus,
 #navbar-section .navbar-nav>li>a:hover {
     color: var(--denim);
+}
+
+.active-menu-item a {
+    color: var(--denim) !important;
+}
+
+
+/* ** more custom ** */
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu .submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown-menu>li:hover>.submenu {
+    display: block;
 }
 
 
@@ -304,6 +335,30 @@ img.single-logo {
     header .left-logo-sec-left {
         justify-content: flex-start !important;
     }
+    /* --- navbar --- */
+    #navbar-section ul.navbar-nav li a::after {
+        width: 2px;
+        height: 60%;
+        left: 0;
+        background: var(--yellow-sunshine);
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    #navbar-section ul.navbar-nav li:last-child a::after {
+        width: 2px;
+        height: 60%;
+        left: 0;
+        background: var(--yellow-sunshine);
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    /* ** more custom ** */
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+    }
+    /* --- / navbar --- */
     /* --- homepage carousel --- */
     #content-section-1 {
         position: initial;

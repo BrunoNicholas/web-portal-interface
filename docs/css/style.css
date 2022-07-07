@@ -105,10 +105,61 @@ header .left-logo-sec-right img {
 
 #navbar-section {
     background-color: var(--denim);
-    padding: 0.5px 0;
+    padding: 0;
     color: var(--white);
+    border: 0;
+    border-radius: 0;
     box-shadow: 0 .15rem 0 var(--yellow-sunshine), 0 -.15rem 0 var(--yellow-sunshine);
 }
+
+
+/* --- Edit Navbar --- */
+
+#navbar-section ul.navbar-nav li a {
+    columns: var(--white);
+    position: relative;
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+
+#navbar-section ul.navbar-nav li a:after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 60%;
+    right: 0;
+    background: var(--yellow-sunshine);
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#navbar-section ul.navbar-nav li:last-child a:after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 60%;
+    right: 0;
+    background: initial;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#navbar-section .navbar-nav>li>a {
+    margin: .2rem 0;
+}
+
+#navbar-section .navbar-nav>li:hover,
+#navbar-section .navbar-nav>li>a:hover {
+    background: var(--yellow-sunshine);
+}
+
+#navbar-section .navbar-nav>li>a:focus,
+#navbar-section .navbar-nav>li>a:hover {
+    color: var(--denim);
+}
+
+
+/* ---- / edit navbar ---- */
 
 .overlap-chat {
     position: fixed;
@@ -135,7 +186,7 @@ img.single-logo {
 }
 
 #ura-nav {
-    border: thin solid transparent;
+    border: none;
 }
 
 #content-section-1 {
@@ -170,7 +221,7 @@ img.single-logo {
 
 .owl-carousel button.owl-dot {
     border: 3px solid #fff;
-    padding: .5em !important;
+    padding: .4em !important;
     border-radius: 50%;
     margin: auto;
     margin-left: .5em;

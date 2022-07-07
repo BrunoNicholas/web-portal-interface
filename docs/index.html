@@ -43,9 +43,9 @@
                                 Languages
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">French</a></li>
+                                    <li><a class="dropdown-item" href="#">Kiswahili</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="ura-nav">
-                        <ul class="navbar-nav me-auto mb-lg-0 mx-auto">
+                        <ul class="navbar-nav me-auto mb-lg-0 form-inline mx-auto">
                             <li class="nav-item dropdown active">
                                 <a href="#" class="nav-link active text-white" aria-current="page">
                                     <!-- <img src="images/phone@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
@@ -155,11 +155,11 @@
             </div>
         </section>
         <section id="content-section-2" class="content-section flex-grow-1">
+            <div class="container">
 
-
-
+            </div>
         </section>
-        <section id="content-section-2" class="content-section flex-grow-1">
+        <section id="content-section-3" class="content-section flex-grow-1">
 
 
 
@@ -214,6 +214,12 @@
             })(jQuery);
 
             $('.owl-nav').addClass('container');
+
+            const navSecItemBox = $('#navbar-section').children('.navbar-nav');
+
+            navSecItemBox.children('li').on('hover', function(e) {
+                alert('li hovered');
+            });
         });
     </script>
 </body>

@@ -39,8 +39,8 @@ footer {
 }
 
 .page header {
-    background-color: transparent;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+    background-color: var(--white);
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)); */
 }
 
 header .header-center {
@@ -122,28 +122,6 @@ header .left-logo-sec-right img {
     padding-right: .8rem;
 }
 
-#navbar-section ul.navbar-nav li a:after {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 60%;
-    right: 0;
-    background: var(--yellow-sunshine);
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-#navbar-section ul.navbar-nav li:last-child a:after {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 60%;
-    right: 0;
-    background: initial;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
 #navbar-section .navbar-nav>li>a {
     margin: .2rem;
 }
@@ -221,9 +199,7 @@ img.single-logo {
 }
 
 #content-section-1 {
-    position: absolute;
     z-index: -1;
-    height: 100vh;
     width: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
 }
@@ -236,7 +212,7 @@ img.single-logo {
 }
 
 #page-slider .caro-item {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: flex-end;
     background-size: auto 100%;
@@ -268,7 +244,7 @@ img.single-logo {
 .owl-nav {
     align-self: center;
     position: absolute;
-    bottom: 40%;
+    bottom: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -336,22 +312,6 @@ img.single-logo {
         justify-content: flex-start !important;
     }
     /* --- navbar --- */
-    #navbar-section ul.navbar-nav li a::after {
-        width: 2px;
-        height: 60%;
-        left: 0;
-        background: var(--yellow-sunshine);
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-    #navbar-section ul.navbar-nav li:last-child a::after {
-        width: 2px;
-        height: 60%;
-        left: 0;
-        background: var(--yellow-sunshine);
-        top: 50%;
-        transform: translate(0, -50%);
-    }
     /* ** more custom ** */
     .dropdown-menu .dropdown-menu {
         margin-left: 0.7rem;

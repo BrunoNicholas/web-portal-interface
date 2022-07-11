@@ -456,7 +456,7 @@ img.single-logo {
         height: 40vh;
     }
     #page-slider .caro-item {
-        height: 52vh;
+        height: 40vh;
     }
     .owl-nav {
         display: none;
@@ -479,5 +479,6 @@ img.single-logo {
     }
     .popular-search-res div:first-child {
         border-bottom-left-radius: initial;
+        border-top-right-radius: 6px;
     }
 }

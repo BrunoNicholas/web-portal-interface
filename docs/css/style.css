@@ -100,6 +100,7 @@ header .left-logo-sec-right img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    white-space: nowrap;
 }
 
 
@@ -293,7 +294,8 @@ img.single-logo {
 /* --- / End carousel --- */
 
 #content-section-2 {
-    margin-top: 100vh;
+    min-height: 10vh;
+    border: thick solid orangered;
 }
 
 .dropdown-menu.show {
@@ -306,8 +308,31 @@ img.single-logo {
 }
 
 .home-bottoms {
+    position: absolute;
+    bottom: 6.1vh;
+}
+
+.home-bottoms-left,
+.home-bottoms-center,
+.home-bottoms-right {
     border: thin solid red;
     min-height: 10vh;
+    z-index: 1;
+    min-width: 10vw;
+}
+
+.home-bottoms-center {
+    border: thin solid transparent;
+}
+
+.home-bottom-card {
+    background-color: var(--yellow-sunshine);
+    min-width: 10vw;
+    margin-right: 2vw;
+}
+
+.home-bottom-card:last-child {
+    margin: initial;
 }
 
 

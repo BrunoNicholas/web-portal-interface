@@ -415,6 +415,10 @@ img.single-logo {
     flex-direction: column;
 }
 
+.welcome-text {
+    white-space: nowrap;
+}
+
 
 /* --- Media queries --- */
 

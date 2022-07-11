@@ -112,6 +112,13 @@ header .left-logo-sec-right img {
     border: 0;
     border-radius: 0;
     box-shadow: 0 .15rem 0 var(--yellow-sunshine), 0 -.15rem 0 var(--yellow-sunshine);
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+#navbar-section::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
 }
 
 #navbar-section ul.navbar-nav li a {
@@ -119,6 +126,7 @@ header .left-logo-sec-right img {
     position: relative;
     padding-left: .8rem;
     padding-right: .8rem;
+    min-width: 5vw;
 }
 
 #navbar-section .navbar-nav>li>a {

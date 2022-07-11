@@ -23,7 +23,7 @@
     <div class="page d-flex flex-column bd-highlight" style="background-image: url('images/tower.jpg');">
         <header class="d-flex flex-column">
             <div class="container flex-grow-1 d-flex justify-content-between">
-                <div class="header-left d-flex justify-content-center align-items-center">
+                <div class="header-left flex-grow-1 d-flex justify-content-start align-items-center">
                     <div class="row cursor-pointer" onclick="window.open('/', '_self')">
                         <div class="col left-logo-sec-left d-flex justify-content-center align-items-center">
                             <img src="images/logo-transparent.png" class="double-logo" alt="URA logo">
@@ -31,8 +31,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="header-center d-flex justify-content-end align-items-center">
-
+                <div class="header-center d-flex flex-column justify-content-center align-items-end">
+                    <div class="input-group">
+                        <input type="text" class="form-control bd-none" placeholder="Search here" aria-label="Search here" aria-describedby="basic-addon2">
+                        <span class="input-group-text bd-none bg-white cursor-pointer" id="basic-addon2"><i class="fa fa-search"></i></span>
+                    </div>
                 </div>
                 <div class="header-right left-logo-sec-right d-flex justify-content-center align-items-center">
                     <div class="btn-group">
@@ -83,37 +86,13 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link text-white" aria-current="page">
                                 <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                COMPANIES
+                                BUSINESS & CORPORATIONS
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link text-white" aria-current="page">
                                 <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                AGENTS
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                GUIDANCE
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                DOMESTIC TAX
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                NON-TAX SERVICES
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-white" aria-current="page">
-                                <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                ENGAGEMENTS
+                                DETAILED GUIDANCE
                             </a>
                         </li>
                         <li class="nav-item">
@@ -125,7 +104,7 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link text-white" aria-current="page">
                                 <!-- <img src="images/group-531-1@1x.png" style="width: 15px;" class="mb-1" alt=""> -->
-                                NOTICES
+                                PUBLICATIONS
                             </a>
                         </li>
                         <li class="nav-item">
@@ -154,7 +133,7 @@
         </div>
         <div class="home-bottoms-right d-flex align-items-end justify-content-end">
             <div class="overlap-chat d-flex justify-content-between align-items-center">
-                <div class="welcome-sec">
+                <div class="welcome-sec" style="display: none;">
                     <div class="welcome-text">How can we help you?</div>
                 </div>
                 <img class="chat-bot-image cursor-pointer good-hover" src="images/chat-bot-1@1x.png">
@@ -162,11 +141,11 @@
         </div>
         <section id="content-section-1" class="content-section flex-grow-1 d-flex flex-column">
             <div class="flex-grow-1 d-flex flex-column owl-carousel text-center" id="page-slider">
-                <div class="caro-item w-100 flex-grow-1" style="background-image:url('images/katikkiro.jpg');"> Page 1 </div>
-                <div class="caro-item w-100 flex-grow-1" style="background-image:url('images/ura-handover-to-works.png');"> Page 2 </div>
-                <div class="caro-item w-100 flex-grow-1" style="background-image:url('images/katikkiro.jpg');"> Page 3 </div>
-                <div class="caro-item w-100 flex-grow-1" style="background-image:url('images/ura-handover-to-works.png');"> Page 4 </div>
-                <div class="caro-item w-100 flex-grow-1" style="background-image:url('images/katikkiro.jpg');"> Page 5 </div>
+                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/katikkiro.jpg');"></div>
+                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/ura-handover-to-works.png');"></div>
+                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/katikkiro.jpg');"></div>
+                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/ura-handover-to-works.png');"></div>
+                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/katikkiro.jpg');"></div>
             </div>
             <div class="w-100 d-flex flex-row justify-content-center home-bottoms">
                 <div class="d-flex flex-row justify-content-evenly text-center home-bottoms-center">

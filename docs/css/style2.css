@@ -44,16 +44,7 @@ footer {
 }
 
 header .header-center {
-    padding: 0 1rem;
-}
-
-header .header-center>div {
-    border: thin solid #eee;
-    border-radius: 6px;
-}
-
-header .header-center>div * {
-    color: var(--denim) !important;
+    flex-grow: 1;
 }
 
 header .left-logo-sec-left img {
@@ -74,10 +65,6 @@ header .left-logo-sec-right img {
     display: none;
 }
 
-.form-control,
-.form-control:focus,
-.form-control:active,
-.form-control:visited,
 .btn,
 .btn:focus,
 .btn:active,
@@ -113,7 +100,6 @@ header .left-logo-sec-right img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    white-space: nowrap;
 }
 
 
@@ -215,8 +201,7 @@ img.single-logo {
     display: none;
 }
 
-#ura-nav,
-.bd-none {
+#ura-nav {
     border: none;
 }
 
@@ -257,17 +242,18 @@ img.single-logo {
 }
 
 .owl-carousel button.owl-dot {
+    border: 3px solid #fff;
     padding: .4em !important;
     border-radius: 50%;
     margin: auto;
     margin-left: .5em;
     margin-right: .5em;
-    background-color: var(--white);
+    background-color: var(--yellow-sunshine);
 }
 
 .owl-carousel button.owl-dot.active {
-    border: 1px solid #fff;
-    background-color: var(--yellow-sunshine);
+    border: 2px solid #fff;
+    background-color: var(--denim);
 }
 
 .owl-nav {
@@ -304,11 +290,10 @@ img.single-logo {
 }
 
 
-/* --- / End carousel --- */
 
+/* --- / End carousel --- */
 #content-section-2 {
-    min-height: 30vh;
-    background-color: var(--tried-blue);
+    margin-top: 100vh;
 }
 
 .dropdown-menu.show {
@@ -321,135 +306,70 @@ img.single-logo {
 }
 
 .home-bottoms {
-    position: absolute;
-    bottom: 6.1vh;
-}
-
-.home-bottoms-left,
-.home-bottoms-center,
-.home-bottoms-right {
+    border: thin solid red;
     min-height: 10vh;
-    z-index: 1;
-    min-width: 10vw;
-    height: fit-content;
-    align-self: flex-end;
-}
-
-.home-bottoms-left {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    z-index: 10;
-    bottom: 6.1vh;
-    left: 0;
-}
-
-.home-bottoms-right {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    z-index: 10;
-    bottom: 6.1vh;
-    right: 0;
-}
-
-.home-bottoms-left .sticky-left-side-btn {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: var(--denim);
-    min-height: 2rem;
-    margin-top: 2vh;
-    text-align: left;
-    white-space: nowrap;
-}
-
-.home-bottoms-left .sticky-left-side-btn img {
-    width: 11px;
-}
-
-.home-bottom-card {
-    background-color: var(--yellow-sunshine);
-    min-width: 10vw;
-    margin-right: 2vw;
-    color: var(--denim);
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.home-bottom-card:last-child {
-    margin: initial;
-}
-
-.home-bottom-card .card-icon {
-    font-size: 30px;
-}
-
-.home-bottom-card .w-100 {
-    font-size: 15px;
-}
-
-.kakasa-list li::marker {
-    content: ">";
-}
-
-.popular-search-res {
-    border-radius: 6px;
-}
-
-.popular-search-res div:first-child {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    font-weight: 700;
-}
-
-.popular-search-res div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.welcome-text {
-    white-space: nowrap;
 }
 
 
-/* --- Section 3 --- */
-
-#content-section-3 {
-    min-height: 50vh;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .95), rgba(255, 255, 255, .95));
+/* -- Sitemap section -- */
+#sitemap-section {
+    z-index: -1;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+    overflow-x: hidden;
+    
+}
+#sitemap-section  .sitemap-content{
+    height: 100%;
+}
+#sitemap-section  .sitemap-content .sidebar{
+    background-color: var(--light-gray);
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+#sitemap-section  .sitemap-content .sidebar .sidebar-title{
+    margin-top: 3rem;
 }
 
-#content-section-3 .card {
-    box-shadow: 0 0 1.5rem 0 #ccc, 0 .1rem #ccc;
+#sitemap-section  .sitemap-content .sidebar .sidebar-items{
+    margin-top: 0.2rem;
+    position: inherit;
+    
+}
+#sitemap-section  .sitemap-content .sidebar .sidebar-items ul{
+    list-style-type: none;
+    
 }
 
-.sec-3-card-body {
-    min-height: max-content;
+#sitemap-section  .sitemap-content .sidebar .sidebar-items ul li{
+    padding: 1rem 0 0;  
+}
+#sitemap-section  .sitemap-content .sidebar .sidebar-items ul li a{
+    text-decoration: none;
+}
+#sitemap-section  .sitemap-content .sidebar .sidebar-items ul li a i{
+    padding-right: 1rem;
+    
+}
+#sitemap-section  .sitemap-content .rightbar{
+    background-color: var(--white);
+   
 }
 
-
-/* --- / Section 3 --- */
-
-
-/* --- section 4 --- */
-
-#content-section-4 {
-    min-height: 50vh;
-    background-image: linear-gradient(to bottom, rgba(192, 192, 192, .95), rgba(192, 192, 192, .95));
+#sitemap-section  .sitemap-content .rightbar-title{
+    margin-top: 3rem;
+   
 }
-
-
+#sitemap-section  .sitemap-content .rightbar .rightbar-content{
+   margin-top: 0.5rem;
+   align-items: flex-start;
+}
 /* --- Media queries --- */
 
 @media screen and (max-width: 900px) {
     .page header {
-        background-color: var(--white);
+        background-color: #fff;
     }
     header .header-center,
     .desktop-display {
@@ -466,6 +386,7 @@ img.single-logo {
         justify-content: flex-start !important;
     }
     /* --- navbar --- */
+    /* ** more custom ** */
     .dropdown-menu .dropdown-menu {
         margin-left: 0.7rem;
         margin-right: 0.7rem;
@@ -473,15 +394,12 @@ img.single-logo {
     }
     /* --- / navbar --- */
     /* --- homepage carousel --- */
-    .home-bottoms {
-        display: none !important;
-    }
     #content-section-1 {
         position: initial;
-        height: 40vh;
+        height: 50vh;
     }
     #page-slider .caro-item {
-        height: 40vh;
+        height: 50vh;
     }
     .owl-nav {
         display: none;
@@ -498,12 +416,5 @@ img.single-logo {
     }
     .page footer {
         padding: .3rem;
-    }
-    .popular-search-res {
-        margin-bottom: 1rem;
-    }
-    .popular-search-res div:first-child {
-        border-bottom-left-radius: initial;
-        border-top-right-radius: 6px;
     }
 }

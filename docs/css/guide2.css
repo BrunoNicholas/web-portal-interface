@@ -1,16 +1,17 @@
 :root {
     --congress-blue: #004497;
     --denim: #2c7abf;
-    --tried-blue: #4f88c3;
     --mist-gray: #c4c4c4;
     --red: #ff0000;
     --ship-gray: #3b3c3e;
+    --light-gray:#D3D3D3;
     --tart-orange: #f74a4d;
     --white: #ffffff;
     --yellow-sunshine: #ffee00;
     --font-size-ll: 30px;
     --font-size-l: 25px;
     --font-size-m: 20px;
+    --font-size-xm: 15px;
     --font-size-s: 12px;
     --font-size-xl: 38px;
     --font-size-xs: 10px;
@@ -54,6 +55,15 @@
     font-style: normal;
     font-weight: 400;
 }
+
+.arial-regular-normal-ship-gray-10px {
+    color: var(--ship-gray);
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+}
+
 
 .arial-bold-white-20px {
     color: var(--white);
@@ -211,6 +221,14 @@
     /* font-weight: 400; */
 }
 
+.arial-regular-normal-ship-gray-20px {
+    color: var(--ship-gray);
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xm);
+    font-style: normal;
+    /* font-weight: 400; */
+}
+
 .arial-regular-normal-white-20px {
     color: var(--white);
     font-family: var(--font-family-arial-regular);
@@ -247,20 +265,4 @@
 
 .border-1px-mist-gray {
     border: 1px solid var(--mist-gray);
-}
-
-.good-hover {
-    transition: .5s;
-}
-
-.text-denim {
-    color: var(--denim);
-}
-
-.bg-yellow-sunshine {
-    background-color: var(--yellow-sunshine);
-}
-
-.bd-none {
-    border: none !important;
 }

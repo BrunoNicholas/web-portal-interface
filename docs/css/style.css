@@ -317,11 +317,46 @@ img.single-logo {
     min-height: 10vh;
     z-index: 1;
     min-width: 10vw;
+    height: fit-content;
+    align-self: flex-end;
 }
 
-.home-bottoms-center {
-    border: thin solid transparent;
+.home-bottoms-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    bottom: 6.1vh;
+    left: 0;
 }
+
+.home-bottoms-right {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    bottom: 6.1vh;
+    right: 0;
+}
+
+.home-bottoms-left .sticky-left-side-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--denim);
+    min-height: 2rem;
+    margin-top: 2vh;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.home-bottoms-left .sticky-left-side-btn img {
+    width: 11px;
+}
+
+.home-bottoms-left .sticky-left-side-btn span {}
 
 .home-bottom-card {
     background-color: var(--yellow-sunshine);

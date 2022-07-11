@@ -139,13 +139,15 @@
                 <img class="chat-bot-image cursor-pointer good-hover" src="images/chat-bot-1@1x.png">
             </div>
         </div>
-        <section id="content-section-1" class="content-section flex-grow-1 d-flex flex-column">
+        <section id="content-section-1" class="content-section d-flex flex-column">
             <div class="flex-grow-1 d-flex flex-column owl-carousel text-center" id="page-slider">
-                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/katikkiro.jpg');"></div>
+                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/ura-tower-bottom-up.jpg');"></div>
+                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/ura-cargo.jpg');"></div>
                 <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/ura-handover-to-works.png');"></div>
                 <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/katikkiro.jpg');"></div>
                 <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/ura-handover-to-works.png');"></div>
-                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/katikkiro.jpg');"></div>
+                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/ura-digital-service.png');"></div>
+                <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/ura-thank-you.jpg');"></div>
             </div>
             <div class="w-100 d-flex flex-row justify-content-center home-bottoms">
                 <div class="d-flex flex-row justify-content-evenly text-center home-bottoms-center">
@@ -172,12 +174,43 @@
                 </div>
             </div>
         </section>
-        <section id="content-section-2" class="content-section flex-grow-1">
-            <div class="container">
-
+        <section id="content-section-2" class="content-section d-flex justify-content-center flex-column">
+            <div class="container mt-3 mb-3">
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column justify-content-between">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control bd-none" placeholder="Search here" aria-label="Search here" aria-describedby="basic-addon2">
+                            <span class="input-group-text bd-none bg-white cursor-pointer" id="basic-addon2"><i class="fa fa-search"></i></span>
+                        </div>
+                        <div class="row bg-white mx-auto popular-search-res flex-grow-1">
+                            <div class="col-md-3 bg-yellow-sunshine text-center color-denim"> Popular search </div>
+                            <div class="col-md text-center">Search result 1</div>
+                            <div class="col-md text-center">Search result 2</div>
+                            <div class="col-md text-center">Search result 3</div>
+                            <div class="col-md text-center">Search result 4</div>
+                            <div class="col-md text-center">Search result 5</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-between">
+                        <div class="card card-body bg-yellow-sunshine flex-grow-1">
+                            <h2 class="card-heading text-denim">Kakasa</h2>
+                            <ul class="row kakasa-list">
+                                <li class="col-md-6">
+                                    Digital tracking solutions
+                                </li>
+                                <li class="col-md-6">
+                                    Voluntary Disclosure
+                                </li>
+                                <li class="col-md-6">
+                                    E-Invoicing
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="content-section-3" class="content-section flex-grow-1">
+        <section id="content-section-3" class="content-section">
 
 
 
@@ -206,7 +239,13 @@
         });
 
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            // 
+            $('.sticky-left-side-btn').css('width', 'fit-content');
+            $('.sticky-left-side-btn').children('span').css('display', 'none');
+            $('.sticky-left-side-btn').hover(function(e) {
+                $(this).children('span').css('display', 'initial');
+            }, function() {
+                $(this).children('span').css('display', 'none');
+            });
         }
         $(document).ready(function() {
             $(".main-carousel").owlCarousel();

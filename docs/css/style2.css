@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400|Roboto:400,500");
+@font-face {
+    font-family: "Arial-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/FontsFree-Net-arial-bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Arial-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/arial.otf") format("opentype");
+}
+
+html,
+body,
+.content-section,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed !important;
+    background-size: auto 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* transition: .5s; */
+    isolation: isolate;
+}
+
+.page header,
+.page-dashboard {
+    min-height: 15vh;
+    background: var(--white);
+}
+
+.page header {
+    background-color: var(--white);
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)); */
+}
+
+header .header-center {
+    flex-grow: 1;
+}
+
+header .left-logo-sec-left img {
+    height: 12vh !important;
+    width: auto !important;
+}
+
+header .left-logo-sec-right img {
+    height: 12vh !important;
+    width: auto !important;
+}
+
+.reflector {
+    transform: rotateY(-180deg);
+}
+
+.navbar-header {
+    display: none;
+}
+
+.btn,
+.btn:focus,
+.btn:active,
+.btn:visited,
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.page footer,
+.page-dashboard footer {
+    text-align: center;
+    background-color: var(--yellow-sunshine);
+    padding: .3rem;
+    color: var(--denim);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.footer .container {
+    letter-spacing: 0;
+    line-height: 10px;
+    white-space: nowrap;
+}
+
+#ura-nav>.navbar-nav>.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* --- Edit Navbar --- */
+
+#navbar-section {
+    background-color: var(--denim);
+    padding: 0;
+    color: var(--white);
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 .15rem 0 var(--yellow-sunshine), 0 -.15rem 0 var(--yellow-sunshine);
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+#navbar-section::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+
+#navbar-section ul.navbar-nav li a {
+    columns: var(--white);
+    position: relative;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    min-width: 5vw;
+}
+
+#navbar-section .navbar-nav>li>a {
+    margin: .2rem;
+}
+
+#navbar-section .navbar-nav>li:hover,
+#navbar-section .navbar-nav>li>a:hover {
+    background: var(--yellow-sunshine);
+}
+
+#navbar-section .navbar-nav>li>a:focus,
+#navbar-section .navbar-nav>li>a:hover {
+    color: var(--denim);
+}
+
+.active-menu-item a {
+    color: var(--denim) !important;
+}
+
+
+/* ** more custom ** */
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu .submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown-menu>li:hover>.submenu {
+    display: block;
+}
+
+
+/* ---- / edit navbar ---- */
+
+.overlap-chat {
+    position: fixed;
+    z-index: 5;
+}
+
+.overlap-chat .welcome-sec {
+    background-color: var(--yellow-sunshine);
+    border-radius: 15px;
+    padding: .1rem 1rem .2rem 1rem;
+    margin-bottom: 5px;
+}
+
+.chat-bot-image {
+    width: 5.5rem;
+}
+
+img.double-logo {
+    display: initial;
+}
+
+img.single-logo {
+    display: none;
+}
+
+#ura-nav {
+    border: none;
+}
+
+#content-section-1 {
+    z-index: -1;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+}
+
+.border-denim {
+    border: thin solid var(--denim);
+}
+
+.color-denim {
+    color: var(--denim);
+}
+
+
+/* --- Carousel --- */
+
+#page-slider {
+    height: 100%;
+}
+
+#page-slider .caro-item {
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    background-size: auto 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.owl-dots {
+    position: absolute;
+    align-self: center;
+    bottom: 1rem;
+}
+
+.owl-carousel button.owl-dot {
+    border: 3px solid #fff;
+    padding: .4em !important;
+    border-radius: 50%;
+    margin: auto;
+    margin-left: .5em;
+    margin-right: .5em;
+    background-color: var(--yellow-sunshine);
+}
+
+.owl-carousel button.owl-dot.active {
+    border: 2px solid #fff;
+    background-color: var(--denim);
+}
+
+.owl-nav {
+    align-self: center;
+    position: absolute;
+    bottom: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-nav>button {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+    border: thin solid var(--yellow-sunshine) !important;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-nav>button svg {
+    font-size: 1.5rem;
+    color: var(--denim);
+}
+
+.owl-nav>button:hover {
+    background-color: var(--denim) !important;
+    border: thin solid var(--denim) !important;
+}
+
+.owl-nav>button svg:hover {
+    color: #c7c9cb;
+}
+
+
+
+/* --- / End carousel --- */
+#content-section-2 {
+    margin-top: 100vh;
+}
+
+.dropdown-menu.show {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.p-fixed {
+    position: fixed !important;
+}
+
+.home-bottoms {
+    border: thin solid red;
+    min-height: 10vh;
+}
+
+
+/* -- Sitemap section -- */
+#sitemap-section {
+    z-index: -1;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+    overflow-x: hidden;
+    
+}
+#sitemap-section  .sitemap-content{
+    height: 100%;
+}
+#sitemap-section  .sitemap-content .sidebar{
+    background-color: var(--light-gray);
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+#sitemap-section  .sitemap-content .sidebar .sidebar-title{
+    margin-top: 3rem;
+}
+
+#sitemap-section  .sitemap-content .sidebar .sidebar-items{
+    margin-top: 0.2rem;
+    position: inherit;
+    
+}
+#sitemap-section  .sitemap-content .sidebar .sidebar-items ul{
+    list-style-type: none;
+    
+}
+
+#sitemap-section  .sitemap-content .sidebar .sidebar-items ul li{
+    padding: 1rem 0 0;  
+}
+#sitemap-section  .sitemap-content .sidebar .sidebar-items ul li a{
+    text-decoration: none;
+}
+#sitemap-section  .sitemap-content .sidebar .sidebar-items ul li a i{
+    padding-right: 1rem;
+    
+}
+#sitemap-section  .sitemap-content .rightbar{
+    background-color: var(--white);
+   
+}
+
+#sitemap-section  .sitemap-content .rightbar-title{
+    margin-top: 3rem;
+   
+}
+#sitemap-section  .sitemap-content .rightbar .rightbar-content{
+   margin-top: 0.5rem;
+   align-items: flex-start;
+}
+/* --- Media queries --- */
+
+@media screen and (max-width: 900px) {
+    .page header {
+        background-color: #fff;
+    }
+    header .header-center,
+    .desktop-display {
+        display: none !important;
+    }
+    .navbar-header {
+        display: initial;
+    }
+    #header-navbar {
+        display: none;
+    }
+    header .left-logo-sec-left,
+    header .left-logo-sec-left {
+        justify-content: flex-start !important;
+    }
+    /* --- navbar --- */
+    /* ** more custom ** */
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+    }
+    /* --- / navbar --- */
+    /* --- homepage carousel --- */
+    #content-section-1 {
+        position: initial;
+        height: 50vh;
+    }
+    #page-slider .caro-item {
+        height: 50vh;
+    }
+    .owl-nav {
+        display: none;
+    }
+    .owl-carousel button.owl-dot {
+        padding: .3em !important;
+    }
+    /* --- / homepage carousel --- */
+    img.double-logo {
+        display: none;
+    }
+    img.single-logo {
+        display: initial;
+    }
+    .page footer {
+        padding: .3rem;
+    }
+}

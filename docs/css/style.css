@@ -477,4 +477,7 @@ img.single-logo {
     .popular-search-res {
         margin-bottom: 1rem;
     }
+    .popular-search-res div:first-child {
+        border-bottom-left-radius: initial;
+    }
 }

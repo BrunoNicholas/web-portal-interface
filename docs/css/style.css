@@ -315,7 +315,7 @@ img.single-logo {
 .home-bottoms-left,
 .home-bottoms-center,
 .home-bottoms-right {
-    border: thin solid red;
+    /* border: thin solid red; */
     min-height: 10vh;
     z-index: 1;
     min-width: 10vw;
@@ -329,10 +329,16 @@ img.single-logo {
     background-color: var(--yellow-sunshine);
     min-width: 10vw;
     margin-right: 2vw;
+    color: var(--denim);
+    font-weight: 500;
 }
 
 .home-bottom-card:last-child {
     margin: initial;
+}
+
+.home-bottom-card .card-icon {
+    font-size: 36px;
 }
 
 

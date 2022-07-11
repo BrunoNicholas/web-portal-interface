@@ -243,18 +243,17 @@ img.single-logo {
 }
 
 .owl-carousel button.owl-dot {
-    border: 3px solid #fff;
     padding: .4em !important;
     border-radius: 50%;
     margin: auto;
     margin-left: .5em;
     margin-right: .5em;
-    background-color: var(--yellow-sunshine);
+    background-color: var(--white);
 }
 
 .owl-carousel button.owl-dot.active {
-    border: 2px solid #fff;
-    background-color: var(--denim);
+    border: 1px solid #fff;
+    background-color: var(--yellow-sunshine);
 }
 
 .owl-nav {
@@ -315,7 +314,6 @@ img.single-logo {
 .home-bottoms-left,
 .home-bottoms-center,
 .home-bottoms-right {
-    /* border: thin solid red; */
     min-height: 10vh;
     z-index: 1;
     min-width: 10vw;
@@ -331,6 +329,9 @@ img.single-logo {
     margin-right: 2vw;
     color: var(--denim);
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home-bottom-card:last-child {
@@ -338,7 +339,11 @@ img.single-logo {
 }
 
 .home-bottom-card .card-icon {
-    font-size: 36px;
+    font-size: 30px;
+}
+
+.home-bottom-card .w-100 {
+    font-size: 15px;
 }
 
 

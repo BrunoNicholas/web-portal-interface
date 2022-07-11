@@ -28,7 +28,7 @@ footer {
     background-size: auto 100%;
     background-position: bottom;
     background-repeat: no-repeat;
-    transition: .5s;
+    /* transition: .5s; */
     isolation: isolate;
 }
 
@@ -59,14 +59,6 @@ header .left-logo-sec-right img {
 
 .reflector {
     transform: rotateY(-180deg);
-}
-
-#header-navbar {
-    border-bottom: thin solid var(--denim);
-}
-
-#header-navbar .nav-item .nav-link {
-    color: var(--denim);
 }
 
 .navbar-header {
@@ -101,6 +93,13 @@ header .left-logo-sec-right img {
     letter-spacing: 0;
     line-height: 10px;
     white-space: nowrap;
+}
+
+#ura-nav>.navbar-nav>.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -296,6 +295,11 @@ img.single-logo {
 
 .p-fixed {
     position: fixed !important;
+}
+
+.home-bottoms {
+    border: thin solid red;
+    min-height: 10vh;
 }
 
 

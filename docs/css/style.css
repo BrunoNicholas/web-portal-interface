@@ -307,8 +307,8 @@ img.single-logo {
 /* --- / End carousel --- */
 
 #content-section-2 {
-    min-height: 10vh;
-    border: thick solid orangered;
+    min-height: 30vh;
+    background-color: var(--tried-blue);
 }
 
 .dropdown-menu.show {
@@ -395,8 +395,24 @@ img.single-logo {
     font-size: 15px;
 }
 
-.good-hover {
-    transition: .5s;
+.kakasa-list li::marker {
+    content: ">";
+}
+
+.popular-search-res {
+    border-radius: 6px;
+}
+
+.popular-search-res div:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-weight: 700;
+}
+
+.popular-search-res div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -404,7 +420,7 @@ img.single-logo {
 
 @media screen and (max-width: 900px) {
     .page header {
-        background-color: #fff;
+        background-color: var(--white);
     }
     header .header-center,
     .desktop-display {
@@ -453,5 +469,8 @@ img.single-logo {
     }
     .page footer {
         padding: .3rem;
+    }
+    .popular-search-res {
+        margin-bottom: 1rem;
     }
 }

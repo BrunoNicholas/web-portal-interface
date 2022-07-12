@@ -393,8 +393,16 @@ img.single-logo {
     font-size: 15px;
 }
 
-.kakasa-list li::marker {
-    content: ">";
+.kakasa-list li::marker,
+.sec-3-card-body li::marker {
+    content: "> ";
+    font-weight: 800;
+}
+
+.kakasa-list li:hover,
+.sec-3-card-body li:hover {
+    color: var(--denim);
+    cursor: pointer;
 }
 
 .popular-search-res {

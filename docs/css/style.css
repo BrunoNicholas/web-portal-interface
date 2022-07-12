@@ -370,8 +370,6 @@ img.single-logo {
     width: 11px;
 }
 
-.home-bottoms-left .sticky-left-side-btn span {}
-
 .home-bottom-card {
     background-color: var(--yellow-sunshine);
     min-width: 10vw;
@@ -417,6 +415,33 @@ img.single-logo {
 
 .welcome-text {
     white-space: nowrap;
+}
+
+
+/* --- Section 3 --- */
+
+#content-section-3 {
+    min-height: 50vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .95), rgba(255, 255, 255, .95));
+}
+
+#content-section-3 .card {
+    box-shadow: 0 0 1.5rem 0 #ccc, 0 .1rem #ccc;
+}
+
+.sec-3-card-body {
+    min-height: max-content;
+}
+
+
+/* --- / Section 3 --- */
+
+
+/* --- section 4 --- */
+
+#content-section-4 {
+    min-height: 50vh;
+    background-image: linear-gradient(to bottom, rgba(192, 192, 192, .95), rgba(192, 192, 192, .95));
 }
 
 

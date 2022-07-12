@@ -193,7 +193,7 @@
                     </div>
                     <div class="col-md-6 d-flex flex-column justify-content-between">
                         <div class="card card-body bg-yellow-sunshine flex-grow-1">
-                            <h2 class="card-heading text-denim">Kakasa</h2>
+                            <h2 class="card-header text-denim bg-yellow-sunshine bd-none">Kakasa</h2>
                             <ul class="row kakasa-list">
                                 <li class="col-md-6">
                                     Digital tracking solutions
@@ -210,9 +210,43 @@
                 </div>
             </div>
         </section>
-        <section id="content-section-3" class="content-section">
+        <section id="content-section-3" class="content-section d-flex flex-column justify-content-center">
+            <div class="container mt-3 mb-3">
+                <div class="row">
+                    <div class="col-md mb-3">
+                        <div class="card">
+                            <div class="card-header bg-yellow-sunshine bd-none">
+                                <h4 class="text-denim text-center">Taxes & Duties</h4>
+                            </div>
+                            <div class="card-body sec-3-card-body">
+                                Hi
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mb-3">
+                        <div class="card">
+                            <div class="card-header bg-yellow-sunshine bd-none">
+                                <h4 class="text-denim text-center">Latest Notices</h4>
+                            </div>
+                            <div class="card-body sec-3-card-body">
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mb-3">
+                        <div class="card">
+                            <div class="card-header bg-yellow-sunshine bd-none">
+                                <h4 class="text-denim text-center">E-Services</h4>
+                            </div>
+                            <div class="card-body sec-3-card-body">
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="content-section-4">
 
         </section>
         <footer>
@@ -246,6 +280,16 @@
             }, function() {
                 $(this).children('span').css('display', 'none');
             });
+        } else {
+            let card3Items = document.getElementsByClassName('sec-3-card-body');
+            let cardSizes = new Array();
+
+            for (var i = 0; i < card3Items.length; i++) {
+                cardSizes.push(card3Items.item(i).clientHeight);
+            }
+
+            $('.sec-3-card-body').css('height', `${Math.max(...cardSizes)}px`);
+            console.log(`${Math.max(...cardSizes)}px`);
         }
         $(document).ready(function() {
             $(".main-carousel").owlCarousel();
@@ -291,7 +335,6 @@
         });
     </script>
     <script>
-        // bootstrap menu DOM
         document.addEventListener("DOMContentLoaded", function() {
             /////// Prevent closing from click inside dropdown
             document.querySelectorAll('.dropdown-menu').forEach(function(element) {

@@ -377,7 +377,7 @@ img.single-logo {
 
 #map {
 	width: 100%;
-	height: 400px;
+	height: 320px;
 }
 .controls {
 	margin-top: 10px;
@@ -403,11 +403,13 @@ img.single-logo {
  	border-color: #4d90fe;
 }
 .geo-data{
-	border: 2px dashed #2A99CF;
-    padding: 10px;
+    border: 2px solid var(--congress-blue);
+    padding: 1rem;
     font-size: 17px;
 	list-style: none;
     text-align: left;
+    margin-top: 1rem
+
 }
 .geo-data span{
 	color: #ed691f;

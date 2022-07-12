@@ -365,6 +365,10 @@ img.single-logo {
    margin-top: 0.5rem;
    align-items: flex-start;
 }
+
+#sitemap-section  .sitemap-content .rightbar .rightbar-content a{
+    text-decoration: none;
+ }
 /* --- Media queries --- */
 
 @media screen and (max-width: 900px) {

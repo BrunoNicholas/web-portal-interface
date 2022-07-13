@@ -136,7 +136,8 @@ header .left-logo-sec-right img {
 }
 
 #navbar-section::-webkit-scrollbar,
-.no-frame-scroll::-webkit-scrollbar {
+.no-frame-scroll::-webkit-scrollbar,
+.sec-3-card-body::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
 }
@@ -397,6 +398,10 @@ img.single-logo {
 
 .home-bottom-card .w-100 {
     font-size: 15px;
+}
+
+.sec-3-card-body {
+    max-height: 60vh;
 }
 
 .sec-3-card-body li {

@@ -535,6 +535,7 @@ img.single-logo {
     align-items: center;
     min-height: 3.5rem;
     height: auto;
+    background-size: auto 100%;
 }
 
 .play-md-section span {

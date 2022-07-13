@@ -400,6 +400,10 @@ img.single-logo {
     font-size: 15px;
 }
 
+.sec-3-card-body {
+    overflow-y: auto;
+}
+
 .sec-3-card-body li {
     line-height: 35px;
 }
@@ -487,6 +491,13 @@ img.single-logo {
     background-size: 100% auto;
 }
 
+
+/* 
+.other-video-images>div:first-child {
+    overflow-y: auto;
+}
+*/
+
 .other-video-images .col-12 {
     min-height: 4vh;
 }
@@ -516,6 +527,28 @@ img.single-logo {
 #content-section-4 {
     min-height: 50vh;
     background-image: linear-gradient(to bottom, rgba(192, 192, 192, .95), rgba(192, 192, 192, .95));
+}
+
+.play-md-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3.5rem;
+    height: auto;
+}
+
+.play-md-section span {
+    /* margin: 1.2rem 0; */
+    background: rgba(102, 102, 102, .95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.play-md-section span {
+    font-size: 75%;
 }
 
 
@@ -581,6 +614,6 @@ img.single-logo {
         border-top-right-radius: 6px;
     }
     .sec-3-card-body {
-        max-height: 60vh;
+        max-height: 65vh;
     }
 }

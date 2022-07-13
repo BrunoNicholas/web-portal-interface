@@ -399,9 +399,7 @@ img.single-logo {
 }
 #videos-section  .videos-content .sidebar .sidebar-items ul{
     list-style-type: none;
-    
 }
-
 #videos-section  .videos-content .sidebar .sidebar-items ul li{
     padding: 1rem 0 0;  
 }
@@ -414,7 +412,17 @@ img.single-logo {
 }
 #videos-section  .videos-content .rightbar{
     background-color: var(--white);
-   
+}
+
+#videos-section  .videos-content .rightbar .video-side-content{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+.video{
+    border: 1px solid #4d90fe;
+    /* margin: 1rem; */
 }
 
 #videos-section  .videos-content .rightbar-title{

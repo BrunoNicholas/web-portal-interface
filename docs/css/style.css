@@ -552,6 +552,11 @@ img.single-logo {
     font-size: 75%;
 }
 
+.text-timing {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
 
 /* --- Media queries --- */
 

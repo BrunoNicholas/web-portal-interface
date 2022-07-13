@@ -212,34 +212,55 @@
         </section>
         <section id="content-section-3" class="content-section d-flex flex-column justify-content-center">
             <div class="container mt-3 mb-3">
-                <div class="row">
+                <div class="row mt-md-5 mb-md-5 pt-md-3">
                     <div class="col-md mb-3">
                         <div class="card">
                             <div class="card-header bg-yellow-sunshine bd-none">
-                                <h4 class="text-denim text-center">Taxes & Duties</h4>
+                                <h4 class="text-denim text-center mt-2">Taxes & Duties</h4>
                             </div>
                             <div class="card-body sec-3-card-body">
-                                Hi
+                                <ul>
+                                    <li>Income Tax for Individuals</li>
+                                    <li>Corporations Tax</li>
+                                    <li>PAYE</li>
+                                    <li>Skills Developement Levy (SDL)</li>
+                                    <li>Withholding Tax</li>
+                                    <li>Capital Gains Tax</li>
+                                    <li>Value Added Taxt</li>
+                                    <li>Excise Duty</li>
+                                    <li>Stamp Duty</li>
+                                    <li>Gaming Tax</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md mb-3">
                         <div class="card">
                             <div class="card-header bg-yellow-sunshine bd-none">
-                                <h4 class="text-denim text-center">Latest Notices</h4>
+                                <h4 class="text-denim text-center mt-2">Latest Notices</h4>
                             </div>
                             <div class="card-body sec-3-card-body">
-
+                                <ul>
+                                    <li>Electronic Fiscal Device <span class="float-md-end">26 May 2022</span></li>
+                                    <li>New dates for Fiscal Ass <span class="float-md-end">25 May 2022</span></li>
+                                    <li>Public holiday service <span class="float-md-end">09 June 2022</span></li>
+                                    <li>Independence ceremony <span class="float-md-end">09 October 2022</span></li>
+                                    <li>New staff recruitment <span class="float-md-end">25 December 2022</span></li>
+                                    <li>TIN registration sensitization <span class="float-md-end">30 January 2023</span></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-md mb-3">
                         <div class="card">
                             <div class="card-header bg-yellow-sunshine bd-none">
-                                <h4 class="text-denim text-center">E-Services</h4>
+                                <h4 class="text-denim text-center mt-2">E-Services</h4>
                             </div>
-                            <div class="card-body sec-3-card-body">
-
+                            <div class="card-body p-0 list-group list-group-flush sec-3-card-body">
+                                <li class="list-group-item">First item <span class="float-md-end"><img src="images/icons/arrow-10@1x.png" /></span></li>
+                                <li class="list-group-item">Second item <span class="float-md-end"><img src="images/icons/arrow-10@1x.png" /></span></li>
+                                <li class="list-group-item">Third item <span class="float-md-end"><img src="images/icons/arrow-10@1x.png" /></span></li>
+                                <li class="list-group-item">Fourth item <span class="float-md-end"><img src="images/icons/arrow-10@1x.png" /></span></li>
                             </div>
                         </div>
                     </div>
@@ -247,7 +268,43 @@
             </div>
         </section>
         <section id="content-section-4">
+            <div class="container mt-3 mb-3">
+                <div class="row mt-md-5 mb-md-5 pt-md-3">
+                    <div class="col-md mb-3">
+                        <div class="card">
+                            <div class="card-header bg-yellow-sunshine bd-none">
+                                <h4 class="text-denim text-left mt-2">News</h4>
+                            </div>
+                            <div class="card-body sec-3-card-body">
 
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mb-3">
+                        <div class="card video-top-card">
+                            <div class="card-header bg-yellow-sunshine bd-none" id="video-top-card-one">
+                                <h4 class="text-denim text-left mt-2"><i class="fa fa-play"></i></h4>
+                            </div>
+                            <div class="card-body sec-3-card-body d-flex flex-column justify-content-between video-image-container" id="video-image-container">
+                                <div class="video-image" style="background-image: url('images/ura-test-guy.png')"></div>
+                                <div class="other-video-images flex-grow-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md mb-3">
+                        <div class="card">
+                            <div class="card-header bg-yellow-sunshine bd-none">
+                                <h4 class="text-denim text-center mt-2">Latest Tweets</h4>
+                            </div>
+                            <div class="card-body sec-3-card-body">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="container">
@@ -281,15 +338,27 @@
                 $(this).children('span').css('display', 'none');
             });
         } else {
-            let card3Items = document.getElementsByClassName('sec-3-card-body');
-            let cardSizes = new Array();
+            let card3Items = document.getElementsByClassName('sec-3-card-body'),
+                cardVideoItem = document.getElementsByClassName('video-image-container'),
+                cardSizes = new Array(),
+                videoItemSizes = new Array();
 
             for (var i = 0; i < card3Items.length; i++) {
                 cardSizes.push(card3Items.item(i).clientHeight);
             }
 
             $('.sec-3-card-body').css('height', `${Math.max(...cardSizes)}px`);
-            console.log(`${Math.max(...cardSizes)}px`);
+
+            if (Math.max(...cardSizes) > Math.max(...videoItemSizes)) {
+                console.log(`All card max value: ${Math.max(...cardSizes)} is greater than: ${Math.max(...videoItemSizes)}`);
+            } else {
+                console.log(`All card max value: ${Math.max(...cardSizes)} is less than: ${Math.max(...videoItemSizes)}`);
+            }
+
+            let headerVidDiv = document.getElementById('video-top-card-one').clientHeight,
+                bodyVidDiv = document.getElementById('video-image-container').clientHeight;
+
+            $('#video-image-container').css('height', `${headerVidDiv + bodyVidDiv}px`);
         }
         $(document).ready(function() {
             $(".main-carousel").owlCarousel();

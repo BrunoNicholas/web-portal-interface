@@ -11,7 +11,8 @@
     --font-size-ll: 30px;
     --font-size-l: 25px;
     --font-size-m: 20px;
-    --font-size-xm: 15px;
+    --font-size-xxm: 14px;
+    --font-size-xm: 18px;
     --font-size-s: 12px;
     --font-size-xl: 38px;
     --font-size-xs: 10px;
@@ -229,6 +230,22 @@
     /* font-weight: 400; */
 }
 
+.arial-regular-normal-ship-gray-14px {
+    color: var(--ship-gray);
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xxm);
+    font-style: normal;
+    /* font-weight: 400; */
+}
+
+
+.arial-regular-normal-ship-gray-16px {
+    color: var(--ship-gray);
+    font-family: var(--font-family-arial-regular);
+    font-size: var(--font-size-xm);
+    font-style: normal;
+    /* font-weight: 400; */
+}
 .arial-regular-normal-white-20px {
     color: var(--white);
     font-family: var(--font-family-arial-regular);

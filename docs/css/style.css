@@ -130,7 +130,13 @@ header .left-logo-sec-right img {
     overflow-x: auto;
 }
 
-#navbar-section::-webkit-scrollbar {
+.no-frame-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar-section::-webkit-scrollbar,
+.no-frame-scroll::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
 }
@@ -475,8 +481,30 @@ img.single-logo {
 .video-top-card .video-image {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    height: 200px;
+    height: 50%;
+    min-height: 200px;
     background-size: 100% auto;
+}
+
+.other-video-images .col-12 {
+    min-height: 4vh;
+    border: thin solid var(--denim);
+}
+
+.data-col-first {
+    flex-grow: 1;
+}
+
+.data-col-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-video-images>div:last-child,
+.data-col-last {
+    height: max-content;
+    padding: .5rem 0;
 }
 
 

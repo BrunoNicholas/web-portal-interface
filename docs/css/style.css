@@ -400,10 +400,6 @@ img.single-logo {
     font-size: 15px;
 }
 
-.sec-3-card-body {
-    max-height: 60vh;
-}
-
 .sec-3-card-body li {
     line-height: 35px;
 }
@@ -493,7 +489,6 @@ img.single-logo {
 
 .other-video-images .col-12 {
     min-height: 4vh;
-    border: thin solid var(--denim);
 }
 
 .data-col-first {
@@ -584,5 +579,8 @@ img.single-logo {
     .popular-search-res div:first-child {
         border-bottom-left-radius: initial;
         border-top-right-radius: 6px;
+    }
+    .sec-3-card-body {
+        max-height: 60vh;
     }
 }

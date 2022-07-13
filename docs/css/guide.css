@@ -264,3 +264,7 @@
 .bd-none {
     border: none !important;
 }
+
+.bd-denim {
+    border-color: var(--denim);
+}

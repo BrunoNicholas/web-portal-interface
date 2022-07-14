@@ -241,6 +241,13 @@ img.single-logo {
     color: var(--denim);
 }
 
+#notification-sec {
+    position: absolute;
+    z-index: 5;
+    background: rgba(0, 0, 0, .5);
+    color: var(--white);
+}
+
 
 /* --- Carousel --- */
 

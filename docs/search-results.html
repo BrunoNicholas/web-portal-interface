@@ -138,10 +138,13 @@
                 <div class="search-results">
                     <div class="row">
                         <div class="col-3">
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
+                            <div class="accordion mb-2" id="search-filter-accordion">
+                                <div class="px-2 py-2">
+                                    <h5>Limit Search Results</h5>
+                                </div>
+                                <div class="">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button collapsed accordion-btn" type="button"
+                                        <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                             aria-controls="collapseOne">
                                             Category
@@ -150,7 +153,7 @@
                                     <div id="collapseOne" class="accordion-collapse collapse show"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <ul>
+                                            <ul class="p-0">
                                                 <li class="acccordion_list">
                                                     <input type="checkbox" name="" class="" id="" />&nbsp;
                                                     <span class="checkmark"></span>Individual (10)
@@ -167,9 +170,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
+                                <div class="">
                                     <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed accordion-btn" type="button"
+                                        <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
                                             Tax Type
@@ -178,7 +181,7 @@
                                     <div id="collapseTwo" class="accordion-collapse show" aria-labelledby="headingTwo"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <ul>
+                                            <ul class="p-0">
                                                 <li class="acccordion_list">
                                                     <input type="checkbox" name="" class="" id="" />&nbsp;
                                                     <span class="checkmark"></span>Customs (10)
@@ -195,9 +198,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
+                                <div class="">
                                     <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed accordion-btn" type="button"
+                                        <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                             aria-expanded="false" aria-controls="collapseThree">
                                             Key Tags
@@ -206,7 +209,7 @@
                                     <div id="collapseThree" class="accordion-collapse collapse show"
                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <ul>
+                                            <ul class="p-0">
                                                 <li class="acccordion_list">
                                                     <input type="checkbox" name="" class="" id="" />&nbsp;
                                                     <span class="checkmark"></span>Business (6)
@@ -217,11 +220,11 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>   
+                                    </div>
                                 </div>
-                                <div class="accordion-item">
+                                <div class="">
                                     <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed accordion-btn" type="button"
+                                        <button class="accordion-button text-white collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                             aria-expanded="false" aria-controls="collapseFour">
                                             Year
@@ -230,7 +233,7 @@
                                     <div id="collapseFour" class="accordion-collapse collapse show"
                                         aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <ul>
+                                            <ul class="p-0">
                                                 <li class="acccordion_list">
                                                     <input type="checkbox" name="" class="" id="" />&nbsp;
                                                     <span class="checkmark"></span>2022 (6)
@@ -241,7 +244,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>   
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -256,7 +259,7 @@
                                             aria-describedby="button-addon3" class="form-control bg-none border-0">
                                         <div class="input-group-append border-0">
                                             <button id="button-addon3" type="button"
-                                                class="btn btn-link text-success"><i class="fa fa-search"></i></button>
+                                                class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -302,13 +305,16 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-12">
-                                    <p>Agriculture is a dominant sector in Uganda's economy contributing close to 23.8% of Uganda as Gross Domestic
-                                        Product (UBOS 2015). Despite the many people employed in the agricultural sector, it only accounts for 4% of
-                                        URA’s register; i.e. only 38,528 are currently registered for taxes, of which 96% are engaged in crop and animal
+                                    <p>Agriculture is a dominant sector in Uganda's economy contributing close to 23.8%
+                                        of Uganda as Gross Domestic
+                                        Product (UBOS 2015). Despite the many people employed in the agricultural
+                                        sector, it only accounts for 4% of
+                                        URA’s register; i.e. only 38,528 are currently registered for taxes, of which
+                                        96% are engaged in crop and animal
                                         production, 2% in forestry and 2% in fishing and agriculture
                                     </p>
-                                    <hr/>
-                                </div> 
+                                    <hr />
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 col-lg-12">
@@ -320,11 +326,12 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-12">
-                                    <p>by categories of sources of income: business, agriculture and other agricultural as per Uganda law. When exporting
+                                    <p>by categories of sources of income: business, agriculture and other agricultural
+                                        as per Uganda law. When exporting
                                         agricultural produces we pay custom tax.
                                     </p>
-                                    <hr/>
-                                </div> 
+                                    <hr />
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -607,6 +607,9 @@ img.single-logo {
         margin-bottom: .5rem;
     }
     /* --- / navbar --- */
+    #notification-sec * {
+        flex-direction: column !important;
+    }
     /* --- homepage carousel --- */
     .home-bottoms {
         display: none !important;

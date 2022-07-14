@@ -1,7 +1,8 @@
 :root {
     --congress-blue: #004497;
-    --denim: #2c7abf;
-    --tried-blue: #4f88c3;
+    --denim: #1c56a3;
+    --denim-1: #4f88c3;
+    --denim-2: #80d2e9;
     --mist-gray: #c4c4c4;
     --red: #ff0000;
     --ship-gray: #3b3c3e;
@@ -22,6 +23,9 @@
     --font-family-montserrat: "Montserrat", Helvetica;
     --font-family-roboto: "Roboto", Helvetica;
 }
+
+
+/* changes: denim from - #2c7abf, replaced tried-blue to denim-1*/
 
 .arial-regular-normal-ship-gray-20px {
     color: var(--ship-gray);

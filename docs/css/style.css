@@ -117,10 +117,6 @@ header .left-logo-sec-right img {
     white-space: nowrap;
 }
 
-#notification-sec * {
-    flex-direction: column !important;
-}
-
 
 /* --- Edit Navbar --- */
 
@@ -611,6 +607,9 @@ img.single-logo {
         margin-bottom: .5rem;
     }
     /* --- / navbar --- */
+    #notification-sec * {
+        flex-direction: column !important;
+    }
     /* --- homepage carousel --- */
     .home-bottoms {
         display: none !important;

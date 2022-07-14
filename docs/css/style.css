@@ -117,6 +117,10 @@ header .left-logo-sec-right img {
     white-space: nowrap;
 }
 
+#notification-sec * {
+    flex-direction: column !important;
+}
+
 
 /* --- Edit Navbar --- */
 

@@ -136,8 +136,20 @@
             </div>
         </div>
         <section id="content-section-1" class="content-section d-flex flex-column">
-            <div class="w-100" id="notification-sec">
-                <div class="container">SO Hi</div>
+            <div class="w-100 animate__animated animate__bounceInDown d-none" id="notification-sec">
+                <div class="container d-flex flex-row justify-content-between align-items-center pt-1 pb-1">
+                    <div class="text-sec flex-grow-1 d-flex flex-row justify-content-between align-items-center p-2">
+                        <p>Applications for approvals of a Credit Note form are available under the Credit Note form download manual form under:<br>Domestic Taxes >> Return Forms.</p>
+                        <button class="btn btn-yellow-sunshine">DOWNLOAD NOW</button>
+                    </div>
+                    <div class="action-sec">
+                        <button class="btn btn-default text-white bd-yellow-sunshine" id="action-sec-btn">
+                            <small>
+                                <i class="fa fa-close"></i> <span class="m-0 ml-2">CLOSE</span>
+                            </small>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="flex-grow-1 d-flex flex-column owl-carousel text-center" id="page-slider">
                 <div class="caro-item w-100 flex-grow-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/ura-tower-bottom-up.jpg');"></div>
@@ -508,6 +520,19 @@
                 $(this).css("-webkit-transform", "initial");
                 $(this).css("transform", "initial");
                 $(this).animate(950);
+            });
+
+            setTimeout(function() {
+                $('#notification-sec').removeClass('d-none');
+            }, 1000);
+
+            $('#action-sec-btn').click(function() {
+                $('#notification-sec').removeClass('animate__bounceInDown');
+                $('#notification-sec').addClass('animate__bounceOutUp');
+
+                setTimeout(function() {
+                    $('#notification-sec').addClass('d-none');
+                }, 2000);
             });
         });
 

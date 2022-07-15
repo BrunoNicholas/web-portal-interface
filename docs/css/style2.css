@@ -387,6 +387,27 @@ img.single-logo {
     border: 1px solid var(--light-gray)
 }
 
+.video-top-card {
+    padding: 0;
+    --bs-card-spacer-x: 0;
+    --bs-card-spacer-y: 0;
+}
+
+.video-top-card .card-header {
+    width: fit-content;
+    border-top-right-radius: initial;
+    padding-left: 1.5rem;
+    padding-right: 1.4rem;
+    position: absolute;
+}
+
+.video-top-card .video-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 200px;
+    background-size: 100% auto;
+}
+
 .nav-link{
     color: var(--congress-blue)
 }

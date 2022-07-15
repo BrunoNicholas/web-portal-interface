@@ -376,19 +376,27 @@ img.single-logo {
     z-index: -1;
     width: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
-    overflow-x: hidden;
-    
+    overflow-x: hidden; 
 }
 
 .videos-menu{
     background-color: var(--light-gray);
 }
 
+.video-item{
+    border: 1px solid var(--light-gray)
+}
+
 .nav-link{
     color: var(--congress-blue)
 }
 
-
+.side-menu-sec>li {
+    min-width: 100%;
+    border-radius: 15px;
+    
+   
+}
 /* Google map */
 #map {
 	width: 100%;

@@ -384,6 +384,11 @@ img.single-logo {
     background-color: var(--light-gray);
 }
 
+.nav-link{
+    color: var(--congress-blue)
+}
+
+
 /* Google map */
 #map {
 	width: 100%;

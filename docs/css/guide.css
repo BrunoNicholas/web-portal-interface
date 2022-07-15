@@ -276,3 +276,7 @@
 .bd-yellow-sunshine {
     border-color: var(--yellow-sunshine);
 }
+
+.list-none {
+    list-style: none;
+}

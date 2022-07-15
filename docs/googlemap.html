@@ -135,35 +135,20 @@
                 <div class="col-9 rightbar">
                     <div class="container">
                         <div class="rightbar-title">
-                            <h3 class="arial-regular-normal-ship-gray-20px "><strong>Taxes: </strong> Individuals</h3>
+                            <h3 class="arial-regular-normal-ship-gray-20px ">Google map </h3>
                         </div>
-                        <div class="rightbar-content"> 
-                            <h3 class="arial-regular-normal-ship-gray-12px "><strong>Register For Taxes</strong></h3>
-                            <p class="arial-regular-normal-ship-gray-12px">consectetur adipiscing elit. Enim a, pharetra, tincidunt tellus nulla arcu, sit viverra. Elementum mi tortor id orci, diam mi purus tristique imperdiet. In vitae amet, non platea
-                                purus. Sit sit mattis nullam ut orci dui. Vivamus massa egestas ullamcorper eleifend nunc turpis sit viverra mauris. Amet rhoncus turpis in malesuada vulputate tortor sed.
-                                Risus ornare gravida ut convallis. Fermentum ut dui odio ullamcorper ultrices neque eget morbi vulputate. Tellus porttitor suspendisse neque adipiscing. Commodo dolor mauris
-                                leo nunc eget pharetra velit id fringilla. Turpis feugiat egestas justo eu, enim bibendum eget dolor. Tristique sapien magna arcu integer egestas pretium venenatis adipiscing
-                                interdum. Pulvinar parturient habitasse nibh diam feugiat tristique volutpat et.  </p>
-                        </div>
-
-                        <div class="rightbar-content"> 
-                            <h3 class="arial-regular-normal-ship-gray-12px "><strong>Register For Taxes</strong></h3>
-                            <p class="arial-regular-normal-ship-gray-12px">consectetur adipiscing elit. Enim a, pharetra, tincidunt tellus nulla arcu, sit viverra. Elementum mi tortor id orci, diam mi purus tristique imperdiet. In vitae amet, non platea
-                                purus. Sit sit mattis nullam ut orci dui. Vivamus massa egestas ullamcorper eleifend nunc turpis sit viverra mauris. Amet rhoncus turpis in malesuada vulputate tortor sed.
-                                Risus ornare gravida ut convallis. Fermentum ut dui odio ullamcorper ultrices neque eget morbi vulputate. Tellus porttitor suspendisse neque adipiscing. Commodo dolor mauris
-                                leo nunc eget pharetra velit id fringilla. Turpis feugiat egestas justo eu, enim bibendum eget dolor. Tristique sapien magna arcu integer egestas pretium venenatis adipiscing
-                                interdum. Pulvinar parturient habitasse nibh diam feugiat tristique volutpat et.  </p>
-                        </div>
-
-
-                        <div class="rightbar-content"> 
-                            <h3 class="arial-regular-normal-ship-gray-12px "><strong>Register For Taxes</strong></h3>
-                            <p class="arial-regular-normal-ship-gray-12px">consectetur adipiscing elit. Enim a, pharetra, tincidunt tellus nulla arcu, sit viverra. Elementum mi tortor id orci, diam mi purus tristique imperdiet. In vitae amet, non platea
-                                purus. Sit sit mattis nullam ut orci dui. Vivamus massa egestas ullamcorper eleifend nunc turpis sit viverra mauris. Amet rhoncus turpis in malesuada vulputate tortor sed.
-                                Risus ornare gravida ut convallis. Fermentum ut dui odio ullamcorper ultrices neque eget morbi vulputate. Tellus porttitor suspendisse neque adipiscing. Commodo dolor mauris
-                                leo nunc eget pharetra velit id fringilla. Turpis feugiat egestas justo eu, enim bibendum eget dolor. Tristique sapien magna arcu integer egestas pretium venenatis adipiscing
-                                interdum. Pulvinar parturient habitasse nibh diam feugiat tristique volutpat et.  </p>
-                        </div>
+                            <input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+                            
+                            <!-- Google map -->
+                            <div id="map"></div>
+                            
+                            <!-- Display geolocation data -->
+                            <ul class="geo-data">
+                                <li>Full Address: <span id="location"></span></li>
+                                <li>Postal Code: <span id="postal_code"></span></li>
+                                <li>Latitude: <span id="lat"></span></li>
+                                <li>Longitude: <span id="lon"></span></li>
+                            </ul>        
                     </div>        
                 </div>
             </div>
@@ -179,6 +164,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/owlcarousel/js/owl.carousel.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAChJNvE8x9PwAl3-TozmGp1mDCy9anvjI&callback=initMap" async defer></script>
+    <script type="text/javascript" src="plugins/map/map.js"></script>
 
     <script>
         let showChatText = false;

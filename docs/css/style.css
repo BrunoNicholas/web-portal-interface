@@ -432,7 +432,7 @@ img.single-logo {
 
 .kakasa-list li::marker,
 .sec-3-card-body li::marker {
-    content: "> " !important;
+    content: "➡️ " !important;
     font-weight: 900;
     color: var(--denim);
 }
@@ -577,6 +577,39 @@ img.single-logo {
 .text-timing {
     font-size: 12px;
     /* letter-spacing: .1px; */
+}
+
+.header-sticky {
+    position: absolute;
+    top: 0;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer dt {
+    font-size: 25px;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--denim-1);
+    cursor: pointer;
+}
+
+.footer-icon span {
+    color: var(--yellow-sunshine);
 }
 
 

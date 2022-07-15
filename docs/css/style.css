@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400|Roboto:400,500");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 @font-face {
     font-family: "Arial-Bold";
     font-style: normal;
@@ -130,7 +131,14 @@ header .left-logo-sec-right img {
     overflow-x: auto;
 }
 
-#navbar-section::-webkit-scrollbar {
+.no-frame-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar-section::-webkit-scrollbar,
+.no-frame-scroll::-webkit-scrollbar,
+.sec-3-card-body::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
 }
@@ -234,6 +242,27 @@ img.single-logo {
     color: var(--denim);
 }
 
+#notification-sec {
+    position: absolute;
+    z-index: 5;
+    background: rgba(0, 0, 0, .5);
+    color: var(--white);
+}
+
+#notification-sec .text-sec p {
+    padding: 0;
+    margin: 0;
+}
+
+#notification-sec .text-sec button {
+    min-width: 170px;
+    color: var(--white);
+}
+
+#notification-sec .action-sec {
+    min-width: 100px;
+}
+
 
 /* --- Carousel --- */
 
@@ -308,7 +337,7 @@ img.single-logo {
 
 #content-section-2 {
     min-height: 30vh;
-    background-color: var(--tried-blue);
+    background-color: var(--denim-1);
 }
 
 .dropdown-menu.show {
@@ -393,13 +422,17 @@ img.single-logo {
     font-size: 15px;
 }
 
+.sec-3-card-body {
+    overflow-y: auto;
+}
+
 .sec-3-card-body li {
     line-height: 35px;
 }
 
 .kakasa-list li::marker,
 .sec-3-card-body li::marker {
-    content: "> " !important;
+    content: "➡️ " !important;
     font-weight: 900;
     color: var(--denim);
 }
@@ -475,8 +508,36 @@ img.single-logo {
 .video-top-card .video-image {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    height: 200px;
+    height: 50%;
+    min-height: 200px;
     background-size: 100% auto;
+}
+
+
+/* 
+.other-video-images>div:first-child {
+    overflow-y: auto;
+}
+*/
+
+.other-video-images .col-12 {
+    min-height: 4vh;
+}
+
+.data-col-first {
+    flex-grow: 1;
+}
+
+.data-col-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-video-images>div:last-child,
+.data-col-last {
+    height: max-content;
+    padding: .5rem 0;
 }
 
 
@@ -488,6 +549,67 @@ img.single-logo {
 #content-section-4 {
     min-height: 50vh;
     background-image: linear-gradient(to bottom, rgba(192, 192, 192, .95), rgba(192, 192, 192, .95));
+}
+
+.play-md-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3.5rem;
+    height: auto;
+    background-size: auto 100%;
+}
+
+.play-md-section span {
+    /* margin: 1.2rem 0; */
+    background: rgba(102, 102, 102, .95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.play-md-section span {
+    font-size: 75%;
+}
+
+.text-timing {
+    font-size: 12px;
+    /* letter-spacing: .1px; */
+}
+
+.header-sticky {
+    position: absolute;
+    top: 0;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer dt {
+    font-size: 25px;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--denim-1);
+    cursor: pointer;
+}
+
+.footer-icon span {
+    color: var(--yellow-sunshine);
 }
 
 
@@ -518,6 +640,9 @@ img.single-logo {
         margin-bottom: .5rem;
     }
     /* --- / navbar --- */
+    #notification-sec * {
+        flex-direction: column !important;
+    }
     /* --- homepage carousel --- */
     .home-bottoms {
         display: none !important;
@@ -551,5 +676,8 @@ img.single-logo {
     .popular-search-res div:first-child {
         border-bottom-left-radius: initial;
         border-top-right-radius: 6px;
+    }
+    .sec-3-card-body {
+        max-height: 65vh;
     }
 }

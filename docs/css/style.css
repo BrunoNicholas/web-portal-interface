@@ -432,7 +432,7 @@ img.single-logo {
 
 .kakasa-list li::marker,
 .sec-3-card-body li::marker {
-    content: "> " !important;
+    content: "➡️ " !important;
     font-weight: 900;
     color: var(--denim);
 }
@@ -577,6 +577,11 @@ img.single-logo {
 .text-timing {
     font-size: 12px;
     /* letter-spacing: .1px; */
+}
+
+.header-sticky {
+    position: absolute;
+    top: 0;
 }
 
 

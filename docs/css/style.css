@@ -401,7 +401,9 @@ img.single-logo {
 
 .home-bottom-card {
     background-color: var(--yellow-sunshine);
-    min-width: 10vw;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
     margin-right: 2vw;
     color: var(--denim);
     font-weight: 500;
@@ -416,10 +418,11 @@ img.single-logo {
 
 .home-bottom-card .card-icon {
     font-size: 30px;
+    white-space: inherit;
 }
 
 .home-bottom-card .w-100 {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .sec-3-card-body {
@@ -445,6 +448,15 @@ img.single-logo {
 
 .popular-search-res {
     border-radius: 6px;
+}
+
+.popular-search-res .col-md a {
+    color: var(--white) !important;
+    font-size: 12px;
+}
+
+.popular-search-res .col-md a::after {
+    content: " >";
 }
 
 .popular-search-res div:first-child {

@@ -94,9 +94,9 @@ header .left-logo-sec-right img {
 .page footer,
 .page-dashboard footer {
     text-align: center;
-    background-color: var(--yellow-sunshine);
+    background-color: var(--denim-1);
     padding: .3rem;
-    color: var(--denim);
+    color: var(--white);
 }
 
 .cursor-pointer {
@@ -593,23 +593,24 @@ footer dt {
 }
 
 .footer-social-icons {
+    max-width: 80%;
     display: flex;
     justify-content: space-between;
 }
 
 .footer-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: var(--denim-1);
+    background: var(--yellow-sunshine);
     cursor: pointer;
 }
 
 .footer-icon span {
-    color: var(--yellow-sunshine);
+    color: var(--denim);
 }
 
 

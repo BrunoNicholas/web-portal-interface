@@ -372,7 +372,50 @@ img.single-logo {
 /* --- Media queries --- */
 
 
+/* -- Sitemap section -- */
+#videos-section {
+    z-index: -1;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+    overflow-x: hidden; 
+}
 
+.videos-menu{
+    background-color: var(--light-gray);
+}
+
+.video-item{
+    border: 1px solid var(--light-gray)
+}
+
+.video-card {
+    padding: 0;
+    --bs-card-spacer-x: 0;
+    --bs-card-spacer-y: 0;
+    width: 100%;
+    position: relative;
+}
+.video-player{
+   position: absolute;
+   /* top: 4rem;
+   left: 6rem;  */
+   padding: 0.5rem 1rem;
+   background-color: var(--yellow-sunshine);
+}
+.video-player i{
+    color: var(--congress-blue);
+}
+
+.nav-link{
+    color: var(--congress-blue)
+}
+
+.side-menu-sec>li {
+    min-width: 100%;
+    border-radius: 15px;
+    
+   
+}
 /* Google map */
 
 #map {

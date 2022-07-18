@@ -370,7 +370,24 @@ img.single-logo {
     text-decoration: none;
  }
 /* --- Media queries --- */
-
+#min-section{
+    z-index: -1;
+    width: 100%;
+    overflow-x: hidden; 
+}
+.rightbar-title{
+    margin-top: 3rem;
+}
+.rightbar-content{
+    margin-top: 1.5rem;
+    align-items: flex-start;
+ }
+.content-side-two{
+    background: url(../images/group-1526@1x.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 100% auto; 
+}
 
 /* -- Sitemap section -- */
 #videos-section {

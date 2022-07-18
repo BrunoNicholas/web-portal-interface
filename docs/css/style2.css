@@ -396,8 +396,8 @@ img.single-logo {
 }
 .video-player{
    position: absolute;
-   top: 4rem;
-   left: 6rem; 
+   /* top: 4rem;
+   left: 6rem;  */
    padding: 0.5rem 1rem;
    background-color: var(--yellow-sunshine);
 }

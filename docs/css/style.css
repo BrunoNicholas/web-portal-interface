@@ -681,4 +681,7 @@ footer dt {
     .sec-3-card-body {
         max-height: 65vh;
     }
+    .footer-social-icons {
+        max-width: 100%;
+    }
 }

@@ -164,11 +164,31 @@
                                         </div>
                                         <div class="card-body m-2">
                                             <h4 class="arial-regular-normal-ship-gray-20px">Tax payer introduction</h4>
-                                            <div class="d-flex flex-row justify-content-between">
-                                                <p class="card-text arial-regular-normal-ship-gray-10px">165 views - 58 hours ago</p>
-                                            </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <p class="card-text arial-regular-normal-ship-gray-12px">165 views... </p>
+                                                    </div>
+                                                    <div class="col-md-6 ms-auto flex-grow-1 d-flex flex-row">
+                                                        <div class="px-2 d-flex flex-row">
+                                                            <i class="fa-solid fa-thumbs-up"></i>
+                                                            <span class="card-text arial-regular-normal-ship-gray-12px px-2">165</span>
+                                                            <p class="card-text arial-regular-normal-ship-gray-12px">Likes </p>
+                                                        </div>
+
+                                                        <div class="px-2 d-flex flex-row">
+                                                            <i class="fa-solid fa-thumbs-down"></i>
+                                                            <span class="card-text arial-regular-normal-ship-gray-12px px-2">165</span>
+                                                            <p class="card-text arial-regular-normal-ship-gray-12px">Dislikes </p>
+                                                        </div>
+
+                                                        <div class="px-2 d-flex flex-row">
+                                                            <i class="fa-solid fa-share-nodes"></i>
+                                                            <span class="card-text arial-regular-normal-ship-gray-12px px-2">165</span>
+                                                            <p class="card-text arial-regular-normal-ship-gray-12px">Share </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             <hr>
-                                            
                                             <div class="d-flex flex-grow-1 flex-column justify-content-start">
                                                 <h4 class="arial-regular-normal-ship-gray-20px">43 Comments</h4>
                                                 <form id="comment-form">
@@ -275,6 +295,7 @@
         });
         $("#cancel").click(function(e) {
             e.preventDefault();
+            document.getElementById("comment-form").reset()
             $("#buttons").hide();
         });
 

@@ -424,6 +424,19 @@ img.single-logo {
     color: var(--congress-blue);
 }
 
+.form-control{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+#buttons{
+    display: none;
+}
+.form-control-focus {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
 .nav-link{
     color: var(--ship-gray)
 }

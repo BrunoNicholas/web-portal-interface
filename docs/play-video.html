@@ -169,8 +169,50 @@
                                             </div>
                                             <hr>
                                             
-                                            <div class="d-flex justify-content-start">
+                                            <div class="d-flex flex-grow-1 flex-column justify-content-start">
                                                 <h4 class="arial-regular-normal-ship-gray-20px">43 Comments</h4>
+                                                <form id="comment-form">
+                                                    <div class="d-flex flex-column px-0">
+                                                        <div class="form-group mt-2 ">
+                                                            <input type="text" class="form-control" id="comment" placeholder="Add a comment...">
+                                                        </div>
+                                                        <div class="mb-2 align-self-end " id="buttons">
+                                                            <button type="submit" class="btn btn-primary" id="cancel">Cancel</button>
+                                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                                        </div>
+                                                   </div>
+                                                </form>
+
+                                                <div class="d-flex mt-3">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="..." alt="...">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <span class="arial-regular-normal-ship-gray-12px"><strong>Arthor hamind</strong> 2 days ago</span>
+                                                        <p class="arial-regular-normal-ship-gray-14px">This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex mt-3">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="..." alt="...">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <span class="arial-regular-normal-ship-gray-12px"><strong>Shaka hamidu</strong> 2 days ago</span>
+                                                        <p class="arial-regular-normal-ship-gray-14px">This is some content from a media component. You can replace this with any content and adjust it as needed
+                                                            This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex mt-3">
+                                                    <div class="flex-shrink-0 align-center">
+                                                        <img src="..." alt="...">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <span class="arial-regular-normal-ship-gray-12px"><strong>Lomoni Morowe hamind</strong> 2 days ago</span>
+                                                        <p class="arial-regular-normal-ship-gray-14px">This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -224,6 +266,18 @@
             }
             showChatText = !showChatText;
         });
+
+        $('#comment').focus(function () {
+            $(this).parent().addClass('form-control-focus').css('background', '#8b66ac');
+            $("#buttons").show();
+        }).blur(function () {
+            $(this).parent().removeClass('form-control-focus');
+        });
+        $("#cancel").click(function(e) {
+            e.preventDefault();
+            $("#buttons").hide();
+        });
+
 
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             // 

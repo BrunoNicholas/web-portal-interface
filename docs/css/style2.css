@@ -100,6 +100,7 @@ header .left-logo-sec-right img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: auto;
 }
 
 
@@ -370,7 +371,24 @@ img.single-logo {
     text-decoration: none;
  }
 /* --- Media queries --- */
-
+#min-section{
+    z-index: -1;
+    width: 100%;
+    overflow-x: hidden; 
+}
+.rightbar-title{
+    margin-top: 3rem;
+}
+.rightbar-content{
+    margin-top: 1.5rem;
+    align-items: flex-start;
+ }
+.content-side-two{
+    background: url(../images/group-1526@1x.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 100% auto; 
+}
 
 /* -- Sitemap section -- */
 #videos-section {
@@ -382,6 +400,7 @@ img.single-logo {
 
 .videos-menu{
     background-color: var(--light-gray);
+    
 }
 
 .video-item{
@@ -394,6 +413,7 @@ img.single-logo {
     --bs-card-spacer-y: 0;
     width: 100%;
     position: relative;
+    height: 100%;
 }
 .video-player{
    position: absolute;
@@ -406,15 +426,41 @@ img.single-logo {
     color: var(--congress-blue);
 }
 
-.nav-link{
-    color: var(--congress-blue)
+.form-control{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+}
+#buttons{
+    display: none;
+}
+.form-control-focus {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border: 0;
+    
 }
 
+#comment-form input:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.nav-link{
+    color: var(--ship-gray)
+}
+
+.nav-item-li{
+    background-color: var(--white)
+}
 .side-menu-sec>li {
     min-width: 100%;
-    border-radius: 15px;
-    
-   
+    border-radius: 15px;   
 }
 /* Google map */
 
@@ -507,5 +553,17 @@ img.single-logo {
     }
     .page footer {
         padding: .3rem;
+    }
+
+    .likes{
+        display: none;
+    }
+
+    .dislikes{
+        display: none;
+    }
+
+    .share{
+        display: none;
     }
 }

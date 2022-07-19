@@ -283,3 +283,33 @@
 .border-1px-mist-gray {
     border: 1px solid var(--mist-gray);
 }
+
+
+
+.good-hover {
+    transition: .5s;
+}
+
+.text-denim {
+    color: var(--denim);
+}
+
+.bg-yellow-sunshine {
+    background-color: var(--yellow-sunshine);
+}
+
+.bd-none {
+    border: none !important;
+}
+
+.bd-denim {
+    border-color: var(--denim);
+}
+
+.bd-yellow-sunshine {
+    border-color: var(--yellow-sunshine);
+}
+
+.list-none {
+    list-style: none;
+}

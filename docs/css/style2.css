@@ -100,6 +100,7 @@ header .left-logo-sec-right img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: auto;
 }
 
 
@@ -427,11 +428,12 @@ img.single-logo {
     color: var(--ship-gray)
 }
 
+.nav-item-li{
+    background-color: var(--white)
+}
 .side-menu-sec>li {
     min-width: 100%;
-    border-radius: 15px;
-    
-   
+    border-radius: 15px;   
 }
 /* Google map */
 

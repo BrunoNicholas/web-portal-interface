@@ -413,6 +413,7 @@ img.single-logo {
     --bs-card-spacer-y: 0;
     width: 100%;
     position: relative;
+    height: 100%;
 }
 .video-player{
    position: absolute;
@@ -552,5 +553,17 @@ img.single-logo {
     }
     .page footer {
         padding: .3rem;
+    }
+
+    .likes{
+        display: none;
+    }
+
+    .dislikes{
+        display: none;
+    }
+
+    .share{
+        display: none;
     }
 }

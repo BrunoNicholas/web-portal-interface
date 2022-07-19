@@ -400,6 +400,7 @@ img.single-logo {
 
 .videos-menu{
     background-color: var(--light-gray);
+    
 }
 
 .video-item{
@@ -428,6 +429,7 @@ img.single-logo {
     border-left: none;
     border-right: none;
     border-top: none;
+    
 }
 #buttons{
     display: none;
@@ -436,7 +438,18 @@ img.single-logo {
     border-left: none;
     border-right: none;
     border-top: none;
+    border: 0;
+    
 }
+
+#comment-form input:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 .nav-link{
     color: var(--ship-gray)
 }

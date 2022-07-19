@@ -297,7 +297,13 @@
 .bg-yellow-sunshine {
     background-color: var(--yellow-sunshine);
 }
+.bg-ship-gray{
+    background-color: var(--ship-gray);
+}
 
+.bg-light-gray{
+    background-color: var(--light-gray);
+}
 .bd-none {
     border: none !important;
 }

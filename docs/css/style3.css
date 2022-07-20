@@ -598,6 +598,11 @@ img.single-logo {
 .search-results  .accordion-body ul{
     list-style-type: none;
 }
+
+.search-results  .accordion-body ul{
+    font-size: 12px;
+}
+
 .search-results .accordion-button{
     background: #2C7ABF !important;
     color: #FFFFFF !important;

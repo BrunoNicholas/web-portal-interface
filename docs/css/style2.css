@@ -100,6 +100,7 @@ header .left-logo-sec-right img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: auto;
 }
 
 
@@ -370,6 +371,138 @@ img.single-logo {
     text-decoration: none;
  }
 /* --- Media queries --- */
+#min-section{
+    z-index: -1;
+    width: 100%;
+    overflow-x: hidden; 
+}
+.rightbar-title{
+    margin-top: 3rem;
+}
+.rightbar-content{
+    margin-top: 1.5rem;
+    align-items: flex-start;
+ }
+.content-side-two{
+    background: url(../images/group-1526@1x.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 100% auto; 
+}
+
+/* -- Sitemap section -- */
+#videos-section {
+    z-index: -1;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+    overflow-x: hidden; 
+}
+
+.videos-menu{
+    background-color: var(--light-gray);
+    
+}
+
+.video-item{
+    border: 1px solid var(--light-gray)
+}
+
+.video-card {
+    padding: 0;
+    --bs-card-spacer-x: 0;
+    --bs-card-spacer-y: 0;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.video-player{
+   position: absolute;
+   /* top: 4rem;
+   left: 6rem;  */
+   padding: 0.5rem 1rem;
+   background-color: var(--yellow-sunshine);
+}
+.video-player i{
+    color: var(--congress-blue);
+}
+
+.form-control{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+}
+#buttons{
+    display: none;
+}
+.form-control-focus {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border: 0;
+    
+}
+
+#comment-form input:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.nav-link{
+    color: var(--ship-gray)
+}
+
+.nav-item-li{
+    background-color: var(--white)
+}
+.side-menu-sec>li {
+    min-width: 100%;
+    border-radius: 15px;   
+}
+/* Google map */
+
+#map {
+	width: 100%;
+	height: 320px;
+}
+.controls {
+	margin-top: 10px;
+	border: 1px solid transparent;
+	border-radius: 2px 0 0 2px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 32px;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+#searchInput {
+	background-color: #fff;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	margin-left: 12px;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 50%;
+}
+#searchInput:focus {
+ 	border-color: #4d90fe;
+}
+.geo-data{
+    border: 2px solid var(--congress-blue);
+    padding: 1rem;
+    font-size: 17px;
+	list-style: none;
+    text-align: left;
+    margin-top: 1rem
+
+}
+.geo-data span{
+	color: #ed691f;
+}
 
 @media screen and (max-width: 900px) {
     .page header {
@@ -420,5 +553,17 @@ img.single-logo {
     }
     .page footer {
         padding: .3rem;
+    }
+
+    .likes{
+        display: none;
+    }
+
+    .dislikes{
+        display: none;
+    }
+
+    .share{
+        display: none;
     }
 }

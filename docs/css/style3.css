@@ -696,12 +696,11 @@ img.single-logo {
 
 
   #image-gallery-section{
-    /* z-index: -1; */
-    height:35em;
+    height:35em;    /* this in temporary */
     width: 100%;
-    background:#FFFFFF;
-    
+    background:#FFFFFF;   
 }
+
 #image-gallery-section .gallery-breadcrumb{
     background: #C7C9CB;
     height: 30px;

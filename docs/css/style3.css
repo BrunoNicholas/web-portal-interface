@@ -617,7 +617,7 @@ img.single-logo {
 
 
 /* Images Gallery */
-/* DEMO GENERAL ============================== */
+/* GENERAL ============================== */
 .hover {
     overflow: hidden;
     position: relative;
@@ -697,7 +697,18 @@ img.single-logo {
 
   #image-gallery-section{
     /* z-index: -1; */
+    height:35em;
     width: 100%;
     background:#FFFFFF;
     
+}
+#image-gallery-section .gallery-breadcrumb{
+    background: #C7C9CB;
+    height: 30px;
+    padding-left: 2%;
+
+}
+#image-gallery-section .gallery-breadcrumb li a{
+  text-decoration: none;
+
 }

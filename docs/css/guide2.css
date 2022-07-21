@@ -301,6 +301,10 @@
     background-color: var(--ship-gray);
 }
 
+.bg-congress-blue{
+    background-color: var(--congress-blue);
+}
+
 .bg-light-gray{
     background-color: var(--light-gray);
 }

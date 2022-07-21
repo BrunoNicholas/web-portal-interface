@@ -601,7 +601,8 @@ footer ul {
 }
 
 footer dt {
-    font-size: 25px;
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
 .footer-social-icons {

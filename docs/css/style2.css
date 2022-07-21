@@ -413,15 +413,19 @@ img.single-logo {
     --bs-card-spacer-y: 0;
     width: 100%;
     position: relative;
+    /* height: 100%; */
+}
+
+.card-img-top{
+    object-fit: contain;
     height: 100%;
 }
 .video-player{
    position: absolute;
-   /* top: 4rem;
-   left: 6rem;  */
    padding: 0.5rem 1rem;
    background-color: var(--yellow-sunshine);
 }
+
 .video-player i{
     color: var(--congress-blue);
 }

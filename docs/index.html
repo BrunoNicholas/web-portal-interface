@@ -475,9 +475,7 @@
                                             This page has been visited
                                             <span class="bg-yellow-sunshine text-denim p-0 pl-1 pr-1"> 372,009,530 </span> times
                                         </p>
-                                    </div>
-                                    <div>
-
+                                        <p id="footer-date-time"></p>
                                     </div>
                                 </div>
                             </dd>
@@ -678,6 +676,14 @@
         }
 
         $('.today-date').text(`${todaysDate()}, ${showTime()}`);
+
+        function footerDateTime() {
+            $('#footer-date-time').html(`<span class="bg-yellow-sunshine text-denim"> ${todaysDate()} - ${showTime()} </span>`);
+            setTimeout(function() {
+                footerDateTime();
+            }, 1000);
+        }
+        footerDateTime();
     </script>
     <script>
         (function($bs) {

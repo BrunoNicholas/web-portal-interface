@@ -4,15 +4,16 @@
     font-family: "Arial-Bold";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/FontsFree-Net-arial-bold.ttf") format("truetype");
+    src: url("../fonts/FontsFree-Net-arial-bold.ttf") format("truetype");
 }
 
-@font-face {
+
+/* @font-face {
     font-family: "Arial-Regular";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/arial.otf") format("opentype");
-}
+    src: url("../fonts/arial.otf") format("opentype");
+} */
 
 html,
 body,

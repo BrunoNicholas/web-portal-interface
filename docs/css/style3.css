@@ -695,7 +695,7 @@ img.single-logo {
 
 
   #image-gallery-section{
-    height:35em;    /* this in temporary */
+    height: 30em;  /* This is temporary */
     width: 100%;
     background:#FFFFFF;   
 }
@@ -709,6 +709,23 @@ img.single-logo {
 #image-gallery-section .gallery-breadcrumb li a{
   text-decoration: none;
 
+}
+
+#image-gallery-section .img-gallery-menu{
+    background: #D3D3D3;
+  
+  }
+
+.nav-link{
+    color: var(--ship-gray);
+}
+
+.nav-item-li{
+    background-color: var(--white);
+}
+.side-menu-sec>li {
+    min-width: 100%;
+    border-radius: 15px;   
 }
 
 

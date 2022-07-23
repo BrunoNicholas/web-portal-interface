@@ -261,6 +261,18 @@
     color: var(--denim);
 }
 
+.text-denim-1 {
+    color: var(--denim-1);
+}
+
+.text-denim-2 {
+    color: var(--denim-2);
+}
+
+.bg-denim {
+    background-color: var(--denim);
+}
+
 .bg-yellow-sunshine {
     background-color: var(--yellow-sunshine);
 }

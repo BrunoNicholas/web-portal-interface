@@ -626,6 +626,31 @@ footer dt {
     color: var(--denim);
 }
 
+.side-menu-head {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.side-menu-sec {
+    width: 100%;
+}
+
+.side-menu-sec>li {
+    width: 100%;
+    border-bottom: thin solid var(--yellow-sunshine);
+}
+
+
+/* === back to menu === */
+
+
+/*
+div.dropdown-menu.show {
+    position: absolute;
+    z-index: 2;
+}
+*/
+
 
 /* --- Media queries --- */
 

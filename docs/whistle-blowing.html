@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="plugins/owlcarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/owlcarousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="css/sections.css">
     <link rel="stylesheet" href="css/guide.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sections.css">
     <script>
         window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"><\/script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"><\/script><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');
     </script>
@@ -371,22 +371,6 @@
                                         <div class="form-card">
                                             <p class="fs-title">Group / Company Account </p>
                                             <div class="row">
-                                                <div class="col-md-6 company-exist mt-5">
-                                                    <label for="company-choice">Select company:</label>
-                                                    <br>
-                                                    <select name="company_id" class="form-control select2" id="company-choice" style="width: 100%;">
-                                                        @foreach($data->companies as $comp)
-                                                        <option value="{{ $comp->id }}" @if(old('company_id') == $comp->id ) selected @endif>{{ $comp->name }}</option>
-                                                        @endforeach
-                                                    </select> <br class="mb-4">
-                                                </div>
-                                                <div class="col-md-6 company-exist mt-5">
-                                                    <label>Assigned code (invitation):</label>
-                                                    <input type="text" id="user_code" name="user_code" placeholder="" class="form-control" />
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                {{-- the difference --}}
                                                 <div class="col-md-4 company-new d-none">
                                                     <label for="companyName">Company name</label>
                                                     <input type="text" name="company_name" id="companyName" placeholder="" class="form-control" />
@@ -401,15 +385,6 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-3 company-new d-none">
-                                                    <label for="companyCountry">Country</label>
-                                                    <select name="country_id" class="form-control select2" id="companyCountry" style="width: 100%;">
-                                                        <option value="">--select--</option>
-                                                        @foreach($data->countries as $ctry)
-                                                        <option value="{{ $ctry->id }}">{{ $ctry->country_name }}</option>
-                                                        @endforeach
-                                                    </select> <br class="mb-4">
-                                                </div>
                                                 <div class="col-md-3 company-new d-none">
                                                     <label for="districtCountry">District</label>
                                                     <select name="district_id" class="form-control select2" id="districtCountry" style="width: 100%;"></select> <br class="mb-4">
@@ -431,21 +406,11 @@
                                                 <div class="col-md-4 company-new d-none">
                                                     <label for="langSel">Major language</label>
                                                     <select id="langSel" name="language" class="form-control select2" style="width: 100%;">
-                                                        @foreach($data->languageList as $lang)
-                                                        <option value="{{ $lang->id }}">
-                                                            {{ $lang->language_name }}
-                                                        </option>
-                                                        @endforeach
                                                     </select>
                                                 </div>
                                                 <div class="col-md-4 company-new d-none">
                                                     <label for="other_languages">Other languages</label>
                                                     <select name="other_languages[]" id="other_languages" multiple class="form-control select2" style="width: 100%">
-                                                        @foreach($data->languageList as $lang)
-                                                        <option value="{{ $lang->id }}">
-                                                            {{ $lang->language_name }}
-                                                        </option>
-                                                        @endforeach
                                                     </select>
                                                 </div>
                                             </div>
@@ -473,28 +438,25 @@
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label>Full names</label>
-                                                    <input type="text" name="user_name" placeholder="" class="form-control" value="{{ Auth::user()->name }}" />
+                                                    <input type="text" name="user_name" placeholder="" class="form-control" value="" />
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label>Email</label>
-                                                    <input type="text" name="user_email" placeholder="Email address" class="form-control" value="{{ Auth::user()->email }}" readonly />
+                                                    <input type="text" name="user_email" placeholder="Email address" class="form-control" value="" readonly />
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label>Gender</label>
                                                     <br>
                                                     <select name="gender_id" class="list-dt form-control select2" style="width: 100%">
-                                                        @foreach($data->genders as $gender)
-                                                        <option value="{{ $gender->id }}" title="{{ $gender->gender_description }}">{{ $gender->gender_name }}</option>
-                                                        @endforeach
                                                     </select> <br class="mb-4">
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label>Personal phone number</label>
-                                                    <input type="text" name="user_phone" placeholder="" class="form-control" value="{{ Auth::user()->phone }}" />
+                                                    <input type="text" name="user_phone" placeholder="" class="form-control" value="" />
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label>Occupation</label>
-                                                    <input type="text" name="user_occupation" class="form-control" value="{{ Auth::user()->occupation }}" />
+                                                    <input type="text" name="user_occupation" class="form-control" value="" />
                                                 </div>
                                             </div>
                                         </div>
@@ -538,7 +500,7 @@
                                             <h2 class="fs-title text-center">Success !</h2> <br><br>
                                             <div class="row justify-content-center">
                                                 <div class="col-3">
-                                                    <img src="{{ asset('assets/img/ok-green-tick.png') }}" class="fit-image">
+                                                    <img src="assets/imgs/ok-green-tick.png" class="fit-image">
                                                 </div>
                                             </div>
                                             <br><br>
@@ -666,6 +628,7 @@
     <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
     <script>
+        // $.fn.modal.Constructor.prototype._enforceFocus = function() {};
         let showChatText = false;
         $('.chat-bot-image').click(function(e) {
             e.preventDefault();

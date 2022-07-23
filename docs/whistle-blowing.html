@@ -309,206 +309,58 @@
                     <div class="col py-3 form-sec content-side two">
                         <div class="container">
                             <div class="card card-body trans-sec">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="enter arial-normal-red-20px text-start">
-                                            <span class="arial-regular-normal-white-20px" style="color: var(--ship-gray);">Subject of issue</span>
-                                            <span class="arial-regular-normal-red-20px text-danger">*</span>
-                                        </div>
-                                        <div class="input-group mb-3 mt-2">
-                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="enter arial-normal-red-20px text-start">
-                                            <span class="arial-regular-normal-white-20px" style="color: var(--ship-gray);">Choose Department</span>
-                                            <span class="arial-regular-normal-red-20px text-danger">*</span>
-                                        </div>
-                                        <div class="input-group w-100 mb-3 mt-2">
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>Open this select menu</option>
-                                            <option value="1">Department 1</option>
-                                            <option value="3">Department 2</option>
-                                            <option value="4">Department 3</option>
-                                            <option value="2">Department 4</option>
-                                        </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="enter arial-normal-red-20px text-start">
-                                            <span class="arial-regular-normal-white-20px" style="color: var(--ship-gray);">Description of issue</span>
-                                            <span class="arial-regular-normal-red-20px text-danger">*</span>
-                                        </div>
-                                        <div class="input-group mb-3 mt-2">
-                                            <textarea type="text" rows="5" class="form-control" placeholder="Details of the issue" aria-label="Details of the issue"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="enter arial-normal-red-20px text-start">
-                                            <span class="arial-regular-normal-white-20px" style="color: var(--ship-gray);">Add related attachment(s)</span>
-                                        </div>
-                                        <div class="input-group mb-3 mt-2">
-                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 offset-md-4 d-flex flex-column justify-content-center align-items-end">
-                                        <button type="button" class="btn login-button-2 text-center text-white mb-3 mt-1">SUBMIT</button>
-                                    </div>
-                                </div>
                                 <form id="msform">
                                     <div class="col-md-6 offset-md-3">
                                         <!-- errors section -->
                                     </div>
                                     <!-- progressbar -->
-                                    <ul id="progressbar">
-                                        <li id="account" class="active"><strong>Company</strong></li>
-                                        <li id="personal"><strong>Personal</strong></li>
-                                        <li id="payment"><strong>Profiling</strong></li>
-                                        <li id="confirm"><strong>Finish</strong></li>
+                                    <ul id="progressbar" class="p-0">
+                                        <li id="account" class="active">
+                                            Section A: <strong>Details Of Informer</strong>
+                                        </li>
+                                        <li id="personal">
+                                            Section B: <strong>Details Of The Suspect</strong>
+                                        </li>
+                                        <li id="payment">
+                                            Section C: <strong>Case Details</strong>
+                                        </li>
+                                        <li id="confirm">
+                                            Section D: <strong>Evidence Of The Case</strong>
+                                        </li>
                                     </ul>
                                     <!-- fieldset sections -->
                                     <fieldset>
-                                        <div class="form-card">
-                                            <p class="fs-title">Group / Company Account </p>
-                                            <div class="row">
-                                                <div class="col-md-4 company-new d-none">
-                                                    <label for="companyName">Company name</label>
-                                                    <input type="text" name="company_name" id="companyName" placeholder="" class="form-control" />
-                                                </div>
-                                                <div class="col-md-4 company-new d-none">
-                                                    <label for="companyEmail">Company email</label>
-                                                    <input type="text" name="company_email" id="companyEmail" placeholder="" class="form-control" />
-                                                </div>
-                                                <div class="col-md-4 company-new d-none">
-                                                    <label for="companyPhone">Company phone number</label>
-                                                    <input type="text" name="company_phone" id="companyPhone" placeholder="" class="form-control" />
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3 company-new d-none">
-                                                    <label for="districtCountry">District</label>
-                                                    <select name="district_id" class="form-control select2" id="districtCountry" style="width: 100%;"></select> <br class="mb-4">
-                                                </div>
-                                                <div class="col-md-3 company-new d-none">
-                                                    <label for="districtVillage">Company locale (Village)</label>
-                                                    <select name="village_id" class="form-control select2" id="districtVillage" style="width: 100%;"></select> <br class="mb-4">
-                                                </div>
-                                                <div class="col-md-3 company-new d-none">
-                                                    <label>Tax Identification Number (TIN)</label>
-                                                    <input type="text" name="companyTin" placeholder="" class="form-control" />
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-4 company-new d-none">
-                                                    <label>Company address (as signature)</label>
-                                                    <textarea name="companyAddress" class="form-control" placeholder=""></textarea>
-                                                </div>
-                                                <div class="col-md-4 company-new d-none">
-                                                    <label for="langSel">Major language</label>
-                                                    <select id="langSel" name="language" class="form-control select2" style="width: 100%;">
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-4 company-new d-none">
-                                                    <label for="other_languages">Other languages</label>
-                                                    <select name="other_languages[]" id="other_languages" multiple class="form-control select2" style="width: 100%">
-                                                    </select>
-                                                </div>
-                                            </div>
+                                        <div class="">
+                                            <h3 class="fs-title">Group / Company Account </h3>
+
+
                                         </div>
                                         <input type="button" name="next" class="next action-button" value="Next Step &raquo;" />
                                     </fieldset>
                                     <fieldset>
-                                        <div class="form-card">
-                                            <p class="fs-title">Personal Information</p>
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <label>Initials</label>
-                                                    <br>
-                                                    <select class="list-dt form-control select2" name="prefix" style="width: 100%">
-                                                        <option>-- select --</option>
-                                                        <option value="Mr.">Mr.</option>
-                                                        <option value="Mrs.">Mrs.</option>
-                                                        <option value="Ms.">Ms.</option>
-                                                        <option value="Rev.">Rev.</option>
-                                                        <option value="Tr.">Tr.</option>
-                                                        <option value="Prof.">Prof.</option>
-                                                        <option value="Dr.">Dr.</option>
-                                                        <option value="">None</option>
-                                                    </select> <br class="mb-4">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label>Full names</label>
-                                                    <input type="text" name="user_name" placeholder="" class="form-control" value="" />
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label>Email</label>
-                                                    <input type="text" name="user_email" placeholder="Email address" class="form-control" value="" readonly />
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label>Gender</label>
-                                                    <br>
-                                                    <select name="gender_id" class="list-dt form-control select2" style="width: 100%">
-                                                    </select> <br class="mb-4">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label>Personal phone number</label>
-                                                    <input type="text" name="user_phone" placeholder="" class="form-control" value="" />
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label>Occupation</label>
-                                                    <input type="text" name="user_occupation" class="form-control" value="" />
-                                                </div>
-                                            </div>
+                                        <div class="">
+                                            <h3 class="fs-title">Personal Information</h3>
+
+
                                         </div>
                                         <input type="button" name="previous" class="previous action-button-previous" value="&laquo; Previous" />
                                         <input type="button" name="next" class="next action-button" value="Next Step &raquo;" />
                                     </fieldset>
                                     <fieldset>
-                                        <div class="form-card">
-                                            <h2 class="fs-title">Additional profiling information</h2>
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <label>Date of birth</label>
-                                                    <input type="date" name="dob" class="form-control" value="" />
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label>Profile status</label>
-                                                    <select class="list-dt form-control select2" name="status" style="width: 100%">
-                                                        <option value="Active">Active</option>
-                                                        <option value="Public">Public</option>
-                                                        <option value="Private">Private</option>
-                                                        <option value="Busy">Busy</option>
-                                                        <option value="Inactive">Inactive</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label>User bio</label>
-                                                    <textarea id="bio" name="bio" class="form-control" placeholder=""></textarea>
-                                                </div>
-                                                <div class="col-md-4 d-none">
-                                                    <label>Has a warehouse (Store)</label>
-                                                    <select class="list-dt form-control select2" id="selected-year" style="width: 100%">
-                                                    </select>
-                                                </div>
-                                            </div>
+                                        <div class="">
+                                            <h3 class="fs-title">Additional profiling information</h3>
+
+
                                         </div>
                                         <input type="button" name="previous" class="previous action-button-previous" value=" &laquo; Previous" />
                                         <input type="button" name="make_payment" class="next action-button" value="Next  &raquo;" />
                                     </fieldset>
                                     <fieldset>
-                                        <div class="form-card">
-                                            <h2 class="fs-title text-center">Success !</h2> <br><br>
-                                            <div class="row justify-content-center">
-                                                <div class="col-3">
-                                                    <img src="assets/imgs/ok-green-tick.png" class="fit-image">
-                                                </div>
-                                            </div>
-                                            <br><br>
-                                            <div class="row justify-content-center">
-                                                <div class="col-7 text-center">
-                                                    <h5>You Have Successfully Finished Your Company Profile</h5>
-                                                </div>
-                                            </div>
+                                        <div class="">
+                                            <h3 class="fs-title">Success !</h3>
+
+
+
                                         </div>
                                         <input type="button" name="previous" class="previous action-button-previous" value=" &laquo; Previous" />
                                         <input type="submit" class="next action-button" value="Submit" />
@@ -625,7 +477,6 @@
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="plugins/select2/js/select2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
     <script>
         // $.fn.modal.Constructor.prototype._enforceFocus = function() {};

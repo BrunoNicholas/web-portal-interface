@@ -188,7 +188,7 @@ select.list-dt:focus {
 
 #progressbar #account:before {
     font-family: FontAwesome;
-    content: "\f023"
+    content: "\f022"
 }
 
 #progressbar #personal:before {
@@ -198,7 +198,7 @@ select.list-dt:focus {
 
 #progressbar #payment:before {
     font-family: FontAwesome;
-    content: "\f09d"
+    content: "\f022"
 }
 
 #progressbar #confirm:before {

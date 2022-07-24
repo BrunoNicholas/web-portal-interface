@@ -27,7 +27,7 @@
     Please use <a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a>, <a href="http://firefox.com">Firefox</a>, <a href="https://www.google.com/chrome/">Google Chrome</a> or any other updated browser instead.
     <![endif]-->
     <div class="page d-flex flex-column bd-highlight" style="background-image: url('images/tower.jpg');">
-        <header class="d-flex flex-column">
+        <header class="d-flex flex-column" id="main-header">
             <div class="container flex-grow-1 d-flex justify-content-between">
                 <div class="header-left flex-grow-1 d-flex justify-content-start align-items-center">
                     <div class="row cursor-pointer" onclick="window.open('/', '_self')">
@@ -123,6 +123,22 @@
                 </div>
             </div>
         </nav>
+        <div class="nav-breadcrumb navbar-collapse w-100">
+            <div class="container">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active text-white" aria-current="page">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active text-white" aria-current="page">
+                            Report Non-Compliance Of TAX
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="home-bottoms-left">
             <button class="btn d-flex align-items-center
              sticky-left-side-btn good-hover text-white">
@@ -149,7 +165,7 @@
             </div>
         </div>
         <section id="content-section-3" class="content-section content-body flex-grow-1">
-            <div class="container">
+            <div class="container pt-2">
                 <div class="row flex-nowrap" style="height: 100%;">
                     <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 content-side one bg-white">
                         <div class="flex-grow-1 d-flex flex-column align-items-center mt-1 pt-2 text-white">
@@ -169,21 +185,22 @@
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0 text-denim-1">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline">Individual Registration</span>
+                                                    <span class="">Individual Registration</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0 text-denim-1">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline">Non-Individual Registration</span>
+                                                    <span class="">Non-Individual Registration</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0 text-denim-1">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline">Group Registration</span>
+                                                    <span class="">Group Registration</span>
                                                 </a>
                                             </li>
+                                            <!-- d-none d-sm-inline -->
                                         </ul>
                                     </li>
                                     <li>
@@ -195,31 +212,31 @@
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Payment Registration</span>
+                                                    <span class="text-denim-1">Payment Registration</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Print Payment Receipt</span>
+                                                    <span class="text-denim-1">Print Payment Receipt</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Payment Re-generation</span>
+                                                    <span class="text-denim-1">Payment Re-generation</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Print Income Tax Payment Certificate</span>
+                                                    <span class="text-denim-1">Print Income Tax Payment Certificate</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Pay VISA/MASTERCARD PRN</span>
+                                                    <span class="text-denim-1">Pay VISA/MASTERCARD PRN</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -233,13 +250,13 @@
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Search And Certification</span>
+                                                    <span class="text-denim-1">Search And Certification</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Mortal Vehicle Search Details</span>
+                                                    <span class="text-denim-1">Mortal Vehicle Search Details</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -253,25 +270,25 @@
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Stamp Certificate Issuance</span>
+                                                    <span class="text-denim-1">Stamp Certificate Issuance</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Stamp Certificate Issuance For Bulk Assessment</span>
+                                                    <span class="text-denim-1">Stamp Certificate Issuance For Bulk Assessment</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Duplicate Certificate Certificate Issuance</span>
+                                                    <span class="text-denim-1">Duplicate Certificate Certificate Issuance</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Declaration Of Instrument</span>
+                                                    <span class="text-denim-1">Declaration Of Instrument</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -285,19 +302,19 @@
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Download Online Forms</span>
+                                                    <span class="text-denim-1">Download Online Forms</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Download Manual Forms</span>
+                                                    <span class="text-denim-1">Download Manual Forms</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
                                                     <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Download Custom Applications</span>
+                                                    <span class="text-denim-1">Download Custom Applications</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -309,41 +326,52 @@
                     <div class="col py-3 form-sec content-side two">
                         <div class="container">
                             <div class="card card-body trans-sec">
+                                <h4 class="mb-2 fs-title d-none">Report Non-Compliance Of TAX</h4>
                                 <form id="msform">
                                     <div class="col-md-6 offset-md-3">
                                         <!-- errors section -->
                                     </div>
                                     <!-- progressbar -->
-                                    <ul id="progressbar" class="p-0">
+                                    <ul id="progressbar" class="p-0 mb-auto">
                                         <li id="account" class="active">
-                                            Section A: <strong>Details Of Informer</strong>
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section A: <strong>Details Of Informer</strong>
+                                            </span>
                                         </li>
                                         <li id="personal">
-                                            Section B: <strong>Details Of The Suspect</strong>
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section B: <strong>Details Of The Suspect</strong>
+                                            </span>
                                         </li>
                                         <li id="payment">
-                                            Section C: <strong>Case Details</strong>
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section C: <strong>Case Details</strong>
+                                            </span>
                                         </li>
                                         <li id="confirm">
-                                            Section D: <strong>Evidence Of The Case</strong>
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section D: <strong>Evidence Of The Case</strong>
+                                            </span>
                                         </li>
                                     </ul>
                                     <!-- fieldset sections -->
                                     <fieldset>
-                                        <div class="">
-                                            <h3 class="fs-title">
+                                        <div class="text-start">
+                                            <h5 class="">
+                                                <span class="d-block d-sm-none">Section A: </span>
                                                 <strong>Details Of Informer</strong>
-                                            </h3>
+                                            </h5>
 
 
                                         </div>
                                         <input type="button" name="next" class="next action-button" value="Next Step &raquo;" />
                                     </fieldset>
                                     <fieldset>
-                                        <div class="">
-                                            <h3 class="fs-title">
+                                        <div class="text-start">
+                                            <h5>
+                                                <span class="d-block d-sm-none">Section B: </span>
                                                 <strong>Details Of The Suspect</strong>
-                                            </h3>
+                                            </h5>
 
 
                                         </div>
@@ -351,10 +379,11 @@
                                         <input type="button" name="next" class="next action-button" value="Next Step &raquo;" />
                                     </fieldset>
                                     <fieldset>
-                                        <div class="">
-                                            <h3 class="fs-title">
+                                        <div class="text-start">
+                                            <h5>
+                                                <span class="d-block d-sm-none">Section C: </span>
                                                 <strong>Case Details</strong>
-                                            </h3>
+                                            </h5>
 
 
                                         </div>
@@ -362,10 +391,11 @@
                                         <input type="button" name="make_payment" class="next action-button" value="Next  &raquo;" />
                                     </fieldset>
                                     <fieldset>
-                                        <div class="">
-                                            <h3 class="fs-title">
+                                        <div class="text-start">
+                                            <h5>
+                                                <span class="d-block d-sm-none">Section D: </span>
                                                 <strong>Evidence Of The Case</strong>
-                                            </h3>
+                                            </h5>
 
 
 
@@ -498,12 +528,31 @@
             }
             showChatText = !showChatText;
         });
+
+        // add fixed menu
+        $(function() {
+            let nav = $("#navbar-section");
+            $(window).scroll(function() {
+                let scroll = $(window).scrollTop(),
+                    headerHeight = document.getElementById('main-header').clientHeight,
+                    navHeight = document.getElementById('navbar-section').clientHeight;
+
+                if (scroll >= (headerHeight + navHeight)) {
+                    nav.addClass("fixed-top");
+                } else {
+                    nav.removeClass("fixed-top");
+                }
+            });
+        });
+
         $('.sticky-left-side-btn').css('width', 'fit-content');
         $('.sticky-left-side-btn').children('span').css('display', 'none');
         $('.sticky-left-side-btn').hover(function(e) {
             $(this).children('span').css('display', 'initial');
+            $(this).css('opacity', '1');
         }, function() {
             $(this).children('span').css('display', 'none');
+            $(this).css('opacity', '.7');
         });
 
         let navSecItemBox = $('#ura-nav').children('ul');
@@ -526,6 +575,11 @@
             $(this).css("transform", "initial");
             $(this).animate(950);
         });
+
+        // nav height
+        const navHeight = document.getElementById('navbar-section').clientHeight;
+        $('.nav-breadcrumb').css('height', `${navHeight}px`);
+        // $('.nav-breadcrumb').css('bottom', `-${navHeight}px`);
 
         function todaysDate() {
             const timeElapsed = Date.now(),

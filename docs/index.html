@@ -25,7 +25,7 @@
     Please use <a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a>, <a href="http://firefox.com">Firefox</a>, <a href="https://www.google.com/chrome/">Google Chrome</a> or any other updated browser instead.
     <![endif]-->
     <div class="page d-flex flex-column bd-highlight" style="background-image: url('images/tower.jpg');">
-        <header class="d-flex flex-column">
+        <header class="d-flex flex-column" id="main-header">
             <div class="container flex-grow-1 d-flex justify-content-between">
                 <div class="header-left flex-grow-1 d-flex justify-content-start align-items-center">
                     <div class="row cursor-pointer" onclick="window.open('/', '_self')">
@@ -560,13 +560,31 @@
             showChatText = !showChatText;
         });
 
+        // add fixed menu
+        $(function() {
+            let nav = $("#navbar-section");
+            $(window).scroll(function() {
+                let scroll = $(window).scrollTop(),
+                    headerHeight = document.getElementById('main-header').clientHeight,
+                    navHeight = document.getElementById('navbar-section').clientHeight;
+
+                if (scroll >= (headerHeight + navHeight)) {
+                    nav.addClass("fixed-top");
+                } else {
+                    nav.removeClass("fixed-top");
+                }
+            });
+        });
+
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $('.sticky-left-side-btn').css('width', 'fit-content');
             $('.sticky-left-side-btn').children('span').css('display', 'none');
             $('.sticky-left-side-btn').hover(function(e) {
                 $(this).children('span').css('display', 'initial');
+                $(this).css('opacity', '1');
             }, function() {
                 $(this).children('span').css('display', 'none');
+                $(this).css('opacity', '.7');
             });
         } else {
             let card3Items = document.getElementsByClassName('sec-3-card-body'),
@@ -590,6 +608,12 @@
                 bodyVidDiv = document.getElementById('video-image-container').clientHeight;
 
             $('#video-image-container').css('height', `${headerVidDiv + bodyVidDiv}px`);
+
+            $('.sticky-left-side-btn').hover(function(e) {
+                $(this).css('opacity', '1');
+            }, function() {
+                $(this).css('opacity', '.7');
+            });
         }
         $(document).ready(function() {
             $(".main-carousel").owlCarousel();

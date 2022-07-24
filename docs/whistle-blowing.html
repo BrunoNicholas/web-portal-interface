@@ -123,6 +123,22 @@
                 </div>
             </div>
         </nav>
+        <div class="nav-breadcrumb navbar-collapse w-100">
+            <div class="container">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active text-white" aria-current="page">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active text-white" aria-current="page">
+                            Report Non-Compliance Of TAX
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="home-bottoms-left">
             <button class="btn d-flex align-items-center
              sticky-left-side-btn good-hover text-white">
@@ -149,7 +165,7 @@
             </div>
         </div>
         <section id="content-section-3" class="content-section content-body flex-grow-1">
-            <div class="container">
+            <div class="container pt-2">
                 <div class="row flex-nowrap" style="height: 100%;">
                     <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 content-side one bg-white">
                         <div class="flex-grow-1 d-flex flex-column align-items-center mt-1 pt-2 text-white">
@@ -309,41 +325,52 @@
                     <div class="col py-3 form-sec content-side two">
                         <div class="container">
                             <div class="card card-body trans-sec">
+                                <h4 class="mb-2 fs-title d-none">Report Non-Compliance Of TAX</h4>
                                 <form id="msform">
                                     <div class="col-md-6 offset-md-3">
                                         <!-- errors section -->
                                     </div>
                                     <!-- progressbar -->
-                                    <ul id="progressbar" class="p-0">
+                                    <ul id="progressbar" class="p-0 mb-auto">
                                         <li id="account" class="active">
-                                            Section A: <strong>Details Of Informer</strong>
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section A: <strong>Details Of Informer</strong>
+                                            </span>
                                         </li>
                                         <li id="personal">
-                                            Section B: <strong>Details Of The Suspect</strong>
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section B: <strong>Details Of The Suspect</strong>
+                                            </span>
                                         </li>
                                         <li id="payment">
-                                            Section C: <strong>Case Details</strong>
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section C: <strong>Case Details</strong>
+                                            </span>
                                         </li>
                                         <li id="confirm">
-                                            Section D: <strong>Evidence Of The Case</strong>
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section D: <strong>Evidence Of The Case</strong>
+                                            </span>
                                         </li>
                                     </ul>
                                     <!-- fieldset sections -->
                                     <fieldset>
-                                        <div class="">
-                                            <h3 class="fs-title">
+                                        <div class="text-start">
+                                            <h5 class="">
+                                                <span class="d-block d-sm-none">Section A: </span>
                                                 <strong>Details Of Informer</strong>
-                                            </h3>
+                                            </h5>
 
 
                                         </div>
                                         <input type="button" name="next" class="next action-button" value="Next Step &raquo;" />
                                     </fieldset>
                                     <fieldset>
-                                        <div class="">
-                                            <h3 class="fs-title">
+                                        <div class="text-start">
+                                            <h5>
+                                                <span class="d-block d-sm-none">Section B: </span>
                                                 <strong>Details Of The Suspect</strong>
-                                            </h3>
+                                            </h5>
 
 
                                         </div>
@@ -351,10 +378,11 @@
                                         <input type="button" name="next" class="next action-button" value="Next Step &raquo;" />
                                     </fieldset>
                                     <fieldset>
-                                        <div class="">
-                                            <h3 class="fs-title">
+                                        <div class="text-start">
+                                            <h5>
+                                                <span class="d-block d-sm-none">Section C: </span>
                                                 <strong>Case Details</strong>
-                                            </h3>
+                                            </h5>
 
 
                                         </div>
@@ -362,10 +390,11 @@
                                         <input type="button" name="make_payment" class="next action-button" value="Next  &raquo;" />
                                     </fieldset>
                                     <fieldset>
-                                        <div class="">
-                                            <h3 class="fs-title">
+                                        <div class="text-start">
+                                            <h5>
+                                                <span class="d-block d-sm-none">Section D: </span>
                                                 <strong>Evidence Of The Case</strong>
-                                            </h3>
+                                            </h5>
 
 
 
@@ -526,6 +555,11 @@
             $(this).css("transform", "initial");
             $(this).animate(950);
         });
+
+        // nav height
+        const navHeight = document.getElementById('navbar-section').clientHeight;
+        $('.nav-breadcrumb').css('height', `${navHeight}px`);
+        // $('.nav-breadcrumb').css('bottom', `-${navHeight}px`);
 
         function todaysDate() {
             const timeElapsed = Date.now(),

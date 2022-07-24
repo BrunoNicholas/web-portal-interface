@@ -118,6 +118,44 @@ header .left-logo-sec-right img {
     white-space: nowrap;
 }
 
+.nav-breadcrumb {
+    background-color: var(--yellow-sunshine);
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.nav-breadcrumb ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.nav-breadcrumb ul .nav-item {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-breadcrumb ul .nav-item::after {
+    content: '> ';
+    font-weight: 700;
+    margin: 0 .4rem;
+    color: var(--denim);
+}
+
+.nav-breadcrumb ul .nav-item:last-child::after {
+    content: '';
+    margin: 0;
+}
+
+.nav-breadcrumb ul .nav-item a {
+    color: var(--denim) !important;
+}
+
 
 /* --- Edit Navbar --- */
 

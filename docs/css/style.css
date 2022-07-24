@@ -596,6 +596,10 @@ img.single-logo {
 
 /* --- / Section 3 --- */
 
+.form-details {
+    min-height: 15vh;
+}
+
 
 /* --- section 4 --- */
 

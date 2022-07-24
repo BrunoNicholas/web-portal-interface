@@ -565,8 +565,10 @@
             $('.sticky-left-side-btn').children('span').css('display', 'none');
             $('.sticky-left-side-btn').hover(function(e) {
                 $(this).children('span').css('display', 'initial');
+                $(this).css('opacity', '1');
             }, function() {
                 $(this).children('span').css('display', 'none');
+                $(this).css('opacity', '.7');
             });
         } else {
             let card3Items = document.getElementsByClassName('sec-3-card-body'),
@@ -590,6 +592,12 @@
                 bodyVidDiv = document.getElementById('video-image-container').clientHeight;
 
             $('#video-image-container').css('height', `${headerVidDiv + bodyVidDiv}px`);
+
+            $('.sticky-left-side-btn').hover(function(e) {
+                $(this).css('opacity', '1');
+            }, function() {
+                $(this).css('opacity', '.7');
+            });
         }
         $(document).ready(function() {
             $(".main-carousel").owlCarousel();

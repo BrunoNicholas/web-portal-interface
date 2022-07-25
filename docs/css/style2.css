@@ -82,7 +82,7 @@ header .left-logo-sec-right img {
     text-align: center;
     background-color: var(--denim-1);
     padding: .3rem;
-    color: var(--denim);
+    color: var(--white);
 }
 
 .cursor-pointer {

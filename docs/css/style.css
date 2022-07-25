@@ -566,13 +566,6 @@ img.single-logo {
     background-size: 100% auto;
 }
 
-
-/* 
-.other-video-images>div:first-child {
-    overflow-y: auto;
-}
-*/
-
 .other-video-images .col-12 {
     min-height: 4vh;
 }
@@ -598,6 +591,20 @@ img.single-logo {
 
 .form-details {
     min-height: 15vh;
+}
+
+#ura-nav .dropdown-toggle::after {
+    content: none;
+}
+
+.sunshine-sub-drop.show {
+    background-color: var(--yellow-sunshine);
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    position: absolute !important;
+    z-index: 10000 !important;
+    width: 100%;
 }
 
 

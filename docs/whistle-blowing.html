@@ -80,9 +80,8 @@
                 <div class="collapse navbar-collapse" id="ura-nav">
                     <ul class="navbar-nav me-auto mb-lg-0 form-inline mx-auto">
                         <li class="nav-item dropdown dropdown-hover">
-                            <a href="#" class="nav-link dropdown-toggle text-white" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INDIVIDUALS</a>
-                            <!-- <a href="#" class="nav-link text-white"> INDIVIDUALS </a> -->
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INDIVIDUALS</a>
+                            <div class="dropdown-menu sunshine-sub-drop">
                                 <a class="dropdown-item" href="#">Single App</a>
                                 <a class="dropdown-item" href="#">Multiple Works</a>
                                 <div class="dropdown-divider"></div>
@@ -568,8 +567,10 @@
         navSecItemBox.children('li').hover(function(e) {
             e.preventDefault();
             $(this).addClass('active-menu-item');
+            $('.nav-breadcrumb').css('display', 'none');
         }, function(e) {
             $(this).removeClass('active-menu-item');
+            $('.nav-breadcrumb').css('display', 'initial');
         });
 
         $('.good-hover').hover(function(e) {
@@ -587,7 +588,8 @@
         // nav height
         const navHeight = document.getElementById('navbar-section').clientHeight;
         $('.nav-breadcrumb').css('height', `${navHeight}px`);
-        // $('.nav-breadcrumb').css('bottom', `-${navHeight}px`);
+        $('.sunshine-sub-drop').css('height', `${navHeight}px`);
+        $('.sunshine-sub-drop').css('top', `${navHeight}px`);
 
         function todaysDate() {
             const timeElapsed = Date.now(),
@@ -626,6 +628,27 @@
             }, 1000);
         }
         footerDateTime();
+
+        (function($bs) {
+            const CLASS_NAME = 'has-child-dropdown-show';
+            // for hover
+            document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function(dd) {
+                dd.addEventListener('mouseenter', function(e) {
+                    let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+                    if (!toggle.classList.contains('show')) {
+                        $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                        dd.classList.add(CLASS_NAME);
+                        $bs.Dropdown.clearMenus();
+                    }
+                });
+                dd.addEventListener('mouseleave', function(e) {
+                    let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+                    if (toggle.classList.contains('show')) {
+                        $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                    }
+                });
+            });
+        })(bootstrap);
 
         $(document).ready(function() {
             let current_fs, next_fs, previous_fs; //fieldsets
@@ -694,9 +717,7 @@
                 ev.preventDefault();
                 return false;
             });
-        });
 
-        $(document).ready(function() {
             $('.select2').select2({
                 width: 'resolve',
                 theme: 'classic'

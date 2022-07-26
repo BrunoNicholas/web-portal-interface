@@ -469,8 +469,13 @@ img.single-logo {
 /* Nathan Styles */
 .intros .video-box {
     position: relative;
+    
 }
 
+.intros .video-box  img{
+    height: 150px;
+    object-fit: cover;
+}
 .intros .video-box a span i {
     font-size: 3rem;
     color: var(--yellow-sunshine);
@@ -655,5 +660,11 @@ img.single-logo {
     .left-sidebar-title{
         display: none;
     }
+ 
+    .intros .video-box  img{
+        height: 100%;
+       
+    }
 }
+
 

@@ -153,18 +153,25 @@
                     </div>
                     <div class="col py-3 bg-white content-side-two d-flex flex-column justify-content-center">
                         <div class="container">
-                                <div class="w-100 d-flex flex-row justify-content-center border bg-white">
-                                    <form class="row">
-                                        <div class="col-auto">
-                                            <label for="staticEmail2" class="visually-hidden">Email</label>
-                                            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                                <div class="w-100 mt-3">
+                                    <form class="row g-3 my-3 border">
+                                        <div class="col-md-3">
+                                            <h3 class="arial-regular-normal-ship-gray-16px  text-center mt-2">Filters</h3>
                                         </div>
-                                        <div class="col-auto">
-                                            <label for="inputPassword2" class="visually-hidden">Password</label>
-                                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                        <div class="col-md-3">
+                                            <select class="form-select" id="validationCustom04" required>
+                                                <option selected disabled value="">Choose category...</option>
+                                                <option>...</option>
+                                            </select>
                                         </div>
-                                        <div class="col-auto">
-                                            <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                                        <div class="col-md-3">
+                                            <select class="form-select" id="validationCustom04" required>
+                                                <option selected disabled value="">Choose type...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="submit" class="btn btn-primary w-100">Search</button>
                                         </div>
                                     </form>
                                 </div>

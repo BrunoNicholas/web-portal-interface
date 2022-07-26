@@ -80,9 +80,9 @@ header .left-logo-sec-right img {
 .page footer,
 .page-dashboard footer {
     text-align: center;
-    background-color: var(--yellow-sunshine);
+    background-color: var(--denim-1);
     padding: .3rem;
-    color: var(--denim);
+    color: var(--white);
 }
 
 .cursor-pointer {
@@ -93,6 +93,36 @@ header .left-logo-sec-right img {
     letter-spacing: 0;
     line-height: 10px;
     white-space: nowrap;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer dt {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.footer-social-icons {
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--yellow-sunshine);
+    cursor: pointer;
+}
+
+.footer-icon span {
+    color: var(--denim);
 }
 
 #ura-nav>.navbar-nav>.nav-item {
@@ -359,7 +389,7 @@ img.single-logo {
 }
 
 #sitemap-section  .sitemap-content .rightbar-title{
-    margin-top: 3rem;
+    margin-top: 1rem;
    
 }
 #sitemap-section  .sitemap-content .rightbar .rightbar-content{
@@ -370,6 +400,10 @@ img.single-logo {
 #sitemap-section  .sitemap-content .rightbar .rightbar-content a{
     text-decoration: none;
  }
+
+ .left-sidebar-title{
+    margin-top: 1rem;
+ }
 /* --- Media queries --- */
 #min-section{
     z-index: -1;
@@ -377,7 +411,7 @@ img.single-logo {
     overflow-x: hidden; 
 }
 .rightbar-title{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 .rightbar-content{
     margin-top: 1.5rem;
@@ -388,6 +422,11 @@ img.single-logo {
     background-repeat:no-repeat;
     background-position: center;
     background-size: 100% auto; 
+}
+
+
+.sec-3-card-body {
+    min-height: max-content;
 }
 
 /* -- Sitemap section -- */
@@ -430,7 +469,7 @@ img.single-logo {
     color: var(--congress-blue);
 }
 
-.form-control{
+.video{
     border-left: none;
     border-right: none;
     border-top: none;
@@ -568,6 +607,10 @@ img.single-logo {
     }
 
     .share{
+        display: none;
+    }
+
+    .left-sidebar-title{
         display: none;
     }
 }

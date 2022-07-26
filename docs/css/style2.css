@@ -424,6 +424,11 @@ img.single-logo {
     background-size: 100% auto; 
 }
 
+
+.sec-3-card-body {
+    min-height: max-content;
+}
+
 /* -- Sitemap section -- */
 #videos-section {
     z-index: -1;

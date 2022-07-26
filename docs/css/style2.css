@@ -12,7 +12,16 @@
     font-weight: 400;
     src: url("/fonts/arial.otf") format("opentype");
 }
-
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 html,
 body,
 .content-section,
@@ -458,16 +467,26 @@ img.single-logo {
 
 
 /* Nathan Styles */
+.intros .video-box {
+    position: relative;
+}
+
+.intros .video-box a span i {
+    font-size: 3rem;
+    color: var(--yellow-sunshine);
+    background-color:var(--congress-blue);
+    border-radius: 50%;
+}
 .border-animation {
     position: absolute;
     top: 0;
     left: 0;
-    width: 6rem;
-    height: 6rem;
+    width: 3rem;
+    height: 3rem;
     border: 0.55rem solid #fff;
     border-radius: 50%;
     animation: pulse-border 1.5s linear infinite;
-  }
+}
 .border-animation--border-1 {
     animation-delay: 1s;
 }
@@ -480,12 +499,9 @@ img.single-logo {
 }
 .video-player{
    position: absolute;
-   width: 6rem;
-   height: 6rem;
-   border: 0.55rem solid #fff;
-   border-radius: 50%;
-   animation: pulse-border 1.5s linear infinite;
+   padding: 0.5rem 1rem;
    background-color: var(--yellow-sunshine);
+  
 }
 
 .video-player i{
@@ -640,3 +656,4 @@ img.single-logo {
         display: none;
     }
 }
+

@@ -400,6 +400,10 @@ img.single-logo {
 #sitemap-section  .sitemap-content .rightbar .rightbar-content a{
     text-decoration: none;
  }
+
+ .left-sidebar-title{
+    margin-top: 1rem;
+ }
 /* --- Media queries --- */
 #min-section{
     z-index: -1;
@@ -418,6 +422,11 @@ img.single-logo {
     background-repeat:no-repeat;
     background-position: center;
     background-size: 100% auto; 
+}
+
+
+.sec-3-card-body {
+    min-height: max-content;
 }
 
 /* -- Sitemap section -- */
@@ -460,7 +469,7 @@ img.single-logo {
     color: var(--congress-blue);
 }
 
-.form-control{
+.video{
     border-left: none;
     border-right: none;
     border-top: none;
@@ -598,6 +607,10 @@ img.single-logo {
     }
 
     .share{
+        display: none;
+    }
+
+    .left-sidebar-title{
         display: none;
     }
 }

@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/owlcarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="css/guide.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sections.css">
     <script>
         window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="/css/bootstrap-ie11.min.css"><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"><\/script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"><\/script><script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');
     </script>
@@ -25,7 +27,7 @@
     Please use <a href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a>, <a href="http://firefox.com">Firefox</a>, <a href="https://www.google.com/chrome/">Google Chrome</a> or any other updated browser instead.
     <![endif]-->
     <div class="page d-flex flex-column bd-highlight" style="background-image: url('images/tower.jpg');">
-        <header class="d-flex flex-column">
+        <header class="d-flex flex-column" id="main-header">
             <div class="container flex-grow-1 d-flex justify-content-between">
                 <div class="header-left flex-grow-1 d-flex justify-content-start align-items-center">
                     <div class="row cursor-pointer" onclick="window.open('/', '_self')">
@@ -78,9 +80,8 @@
                 <div class="collapse navbar-collapse" id="ura-nav">
                     <ul class="navbar-nav me-auto mb-lg-0 form-inline mx-auto">
                         <li class="nav-item dropdown dropdown-hover">
-                            <a href="#" class="nav-link dropdown-toggle text-white" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INDIVIDUALS</a>
-                            <!-- <a href="#" class="nav-link text-white"> INDIVIDUALS </a> -->
-                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">INDIVIDUALS</a>
+                            <div class="dropdown-menu sunshine-sub-drop">
                                 <a class="dropdown-item" href="#">Single App</a>
                                 <a class="dropdown-item" href="#">Multiple Works</a>
                                 <div class="dropdown-divider"></div>
@@ -121,6 +122,22 @@
                 </div>
             </div>
         </nav>
+        <div class="nav-breadcrumb navbar-collapse w-100">
+            <div class="container">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active text-white good-hover" aria-current="page">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active text-white good-hover" aria-current="page">
+                            Report Non-Compliance Of TAX
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="home-bottoms-left">
             <button class="btn d-flex align-items-center
              sticky-left-side-btn good-hover text-white">
@@ -147,10 +164,10 @@
             </div>
         </div>
         <section id="content-section-3" class="content-section content-body flex-grow-1">
-            <div class="container">
+            <div class="container pt-2">
                 <div class="row flex-nowrap" style="height: 100%;">
                     <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 content-side one bg-white">
-                        <div class="flex-grow-1 d-flex flex-column align-items-center mt-4 pt-2 text-white">
+                        <div class="flex-grow-1 d-flex flex-column align-items-center mt-1 pt-2 text-white">
                             <div class="dropdown bg-denim side-menu-head text-center w-100">
                                 <a href="#" class="align-items-center text-white text-decoration-none w-100">
                                     <span class="d-none d-sm-inline mx-1 flex-grow-1"> e-Service </span>
@@ -166,16 +183,23 @@
                                         <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0 text-denim-1">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline">Individual Registration</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="">Individual Registration</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0 text-denim-1">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline">Item</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="">Non-Individual Registration</span>
                                                 </a>
                                             </li>
+                                            <li>
+                                                <a href="#" class="nav-link px-0 text-denim-1">
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="">Group Registration</span>
+                                                </a>
+                                            </li>
+                                            <!-- d-none d-sm-inline -->
                                         </ul>
                                     </li>
                                     <li>
@@ -186,14 +210,32 @@
                                         <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Item</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Payment Registration</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Item</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Print Payment Receipt</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link px-0">
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Payment Re-generation</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link px-0">
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Print Income Tax Payment Certificate</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link px-0">
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Pay VISA/MASTERCARD PRN</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -206,26 +248,14 @@
                                         <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Product</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Search And Certification</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Product</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Product</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Product</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Mortal Vehicle Search Details</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -238,14 +268,26 @@
                                         <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Item</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Stamp Certificate Issuance</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Item</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Stamp Certificate Issuance For Bulk Assessment</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link px-0">
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Duplicate Certificate Certificate Issuance</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link px-0">
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Declaration Of Instrument</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -258,14 +300,20 @@
                                         <ul class="collapse nav flex-column ms-1" id="submenu5" data-bs-parent="#menu">
                                             <li class="w-100">
                                                 <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Item</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Download Online Forms</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0">
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    <span class="d-none d-sm-inline text-denim-1">Item</span>
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Download Manual Forms</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link px-0">
+                                                    <i class="fa fa-angles-right text-denim-1" aria-hidden="true"></i>
+                                                    <span class="text-denim-1">Download Custom Applications</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -277,52 +325,92 @@
                     <div class="col py-3 form-sec content-side two">
                         <div class="container">
                             <div class="card card-body trans-sec">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="enter arial-normal-red-20px text-start">
-                                            <span class="arial-regular-normal-white-20px" style="color: var(--ship-gray);">Subject of issue</span>
-                                            <span class="arial-regular-normal-red-20px text-danger">*</span>
-                                        </div>
-                                        <div class="input-group mb-3 mt-2">
-                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        </div>
+                                <h4 class="mb-2 fs-title d-none">Report Non-Compliance Of TAX</h4>
+                                <form id="msform">
+                                    <div class="col-md-6 offset-md-3">
+                                        <!-- errors section -->
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="enter arial-normal-red-20px text-start">
-                                            <span class="arial-regular-normal-white-20px" style="color: var(--ship-gray);">Choose Department</span>
-                                            <span class="arial-regular-normal-red-20px text-danger">*</span>
+                                    <!-- progressbar -->
+                                    <ul id="progressbar" class="p-0 mb-auto">
+                                        <li id="account" class="active">
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section A: <strong>Details Of Informer</strong>
+                                            </span>
+                                        </li>
+                                        <li id="personal">
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section B: <strong>Details Of The Suspect</strong>
+                                            </span>
+                                        </li>
+                                        <li id="payment">
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section C: <strong>Case Details</strong>
+                                            </span>
+                                        </li>
+                                        <li id="confirm">
+                                            <span class="d-none d-sm-block mb-3">
+                                                Section D: <strong>Evidence Of The Case</strong>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <!-- fieldset sections -->
+                                    <fieldset>
+                                        <div class="text-start">
+                                            <h5 class="">
+                                                <span class="d-block d-sm-none">Section A: </span>
+                                                <strong>Details Of Informer</strong>
+                                            </h5>
+                                            <div class="form-details">
+
+
+                                            </div>
                                         </div>
-                                        <div class="input-group w-100 mb-3 mt-2">
-                                            <select class="form-select" aria-label="Default select example">
-                                            <option selected>Open this select menu</option>
-                                            <option value="1">Department 1</option>
-                                            <option value="3">Department 2</option>
-                                            <option value="4">Department 3</option>
-                                            <option value="2">Department 4</option>
-                                        </select>
+                                        <input type="button" name="next" class="next action-button" value="Next Step &raquo;" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="text-start">
+                                            <h5>
+                                                <span class="d-block d-sm-none">Section B: </span>
+                                                <strong>Details Of The Suspect</strong>
+                                            </h5>
+                                            <div class="form-details">
+
+
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="enter arial-normal-red-20px text-start">
-                                            <span class="arial-regular-normal-white-20px" style="color: var(--ship-gray);">Description of issue</span>
-                                            <span class="arial-regular-normal-red-20px text-danger">*</span>
+                                        <input type="button" name="previous" class="previous action-button-previous" value="&laquo; Previous" />
+                                        <input type="button" name="next" class="next action-button" value="Next Step &raquo;" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="text-start">
+                                            <h5>
+                                                <span class="d-block d-sm-none">Section C: </span>
+                                                <strong>Case Details</strong>
+                                            </h5>
+                                            <div class="form-details">
+
+
+                                            </div>
                                         </div>
-                                        <div class="input-group mb-3 mt-2">
-                                            <textarea type="text" rows="5" class="form-control" placeholder="Details of the issue" aria-label="Details of the issue"></textarea>
+                                        <input type="button" name="previous" class="previous action-button-previous" value=" &laquo; Previous" />
+                                        <input type="button" name="make_payment" class="next action-button" value="Next  &raquo;" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <div class="text-start">
+                                            <h5>
+                                                <span class="d-block d-sm-none">Section D: </span>
+                                                <strong>Evidence Of The Case</strong>
+                                            </h5>
+                                            <div class="form-details">
+
+
+                                            </div>
+
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="enter arial-normal-red-20px text-start">
-                                            <span class="arial-regular-normal-white-20px" style="color: var(--ship-gray);">Add related attachment(s)</span>
-                                        </div>
-                                        <div class="input-group mb-3 mt-2">
-                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 offset-md-4 d-flex flex-column justify-content-center align-items-end">
-                                        <button type="button" class="btn login-button-2 text-center text-white mb-3 mt-1">SUBMIT</button>
-                                    </div>
-                                </div>
+                                        <input type="button" name="previous" class="previous action-button-previous" value=" &laquo; Previous" />
+                                        <input type="submit" class="next action-button" value="Submit" />
+                                    </fieldset>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -361,9 +449,7 @@
                                             This page has been visited
                                             <span class="bg-yellow-sunshine text-denim p-0 pl-1 pr-1"> 372,009,530 </span> times
                                         </p>
-                                    </div>
-                                    <div>
-
+                                        <p id="footer-date-time"></p>
                                     </div>
                                 </div>
                             </dd>
@@ -435,8 +521,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="plugins/select2/js/select2.min.js"></script>
 
     <script>
+        // $.fn.modal.Constructor.prototype._enforceFocus = function() {};
         let showChatText = false;
         $('.chat-bot-image').click(function(e) {
             e.preventDefault();
@@ -447,12 +535,31 @@
             }
             showChatText = !showChatText;
         });
+
+        // add fixed menu
+        $(function() {
+            let nav = $("#navbar-section");
+            $(window).scroll(function() {
+                let scroll = $(window).scrollTop(),
+                    headerHeight = document.getElementById('main-header').clientHeight,
+                    navHeight = document.getElementById('navbar-section').clientHeight;
+
+                if (scroll >= (headerHeight + navHeight)) {
+                    nav.addClass("fixed-top");
+                } else {
+                    nav.removeClass("fixed-top");
+                }
+            });
+        });
+
         $('.sticky-left-side-btn').css('width', 'fit-content');
         $('.sticky-left-side-btn').children('span').css('display', 'none');
         $('.sticky-left-side-btn').hover(function(e) {
             $(this).children('span').css('display', 'initial');
+            $(this).css('opacity', '1');
         }, function() {
             $(this).children('span').css('display', 'none');
+            $(this).css('opacity', '.7');
         });
 
         let navSecItemBox = $('#ura-nav').children('ul');
@@ -460,8 +567,10 @@
         navSecItemBox.children('li').hover(function(e) {
             e.preventDefault();
             $(this).addClass('active-menu-item');
+            $('.nav-breadcrumb').css('display', 'none');
         }, function(e) {
             $(this).removeClass('active-menu-item');
+            $('.nav-breadcrumb').css('display', 'initial');
         });
 
         $('.good-hover').hover(function(e) {
@@ -474,6 +583,145 @@
             $(this).css("-webkit-transform", "initial");
             $(this).css("transform", "initial");
             $(this).animate(950);
+        });
+
+        // nav height
+        const navHeight = document.getElementById('navbar-section').clientHeight;
+        $('.nav-breadcrumb').css('height', `${navHeight}px`);
+        $('.sunshine-sub-drop').css('height', `${navHeight}px`);
+        $('.sunshine-sub-drop').css('top', `${navHeight}px`);
+
+        function todaysDate() {
+            const timeElapsed = Date.now(),
+                today = new Date(timeElapsed);
+
+            return today.toDateString();
+        }
+
+        function showTime() {
+            let date = new Date(),
+                h = date.getHours(),
+                m = date.getMinutes(),
+                s = date.getSeconds(),
+                session = "AM";
+            if (h === 0) {
+                h = 12;
+            }
+            session = (h >= 12 ? "PM" : "AM");
+            if (h > 12) {
+
+
+                h = h - 12;
+            }
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+            return h + ":" + m + ":" + s + " " + session;
+        }
+
+        $('.today-date').text(`${todaysDate()}, ${showTime()}`);
+
+        function footerDateTime() {
+            $('#footer-date-time').html(`<span class="bg-yellow-sunshine text-denim"> ${todaysDate()} - ${showTime()} </span>`);
+            setTimeout(function() {
+                footerDateTime();
+            }, 1000);
+        }
+        footerDateTime();
+
+        (function($bs) {
+            const CLASS_NAME = 'has-child-dropdown-show';
+            // for hover
+            document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function(dd) {
+                dd.addEventListener('mouseenter', function(e) {
+                    let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+                    if (!toggle.classList.contains('show')) {
+                        $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                        dd.classList.add(CLASS_NAME);
+                        $bs.Dropdown.clearMenus();
+                    }
+                });
+                dd.addEventListener('mouseleave', function(e) {
+                    let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+                    if (toggle.classList.contains('show')) {
+                        $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                    }
+                });
+            });
+        })(bootstrap);
+
+        $(document).ready(function() {
+            let current_fs, next_fs, previous_fs; //fieldsets
+            let opacity;
+            $(".next").click(function() {
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+
+                //Add Class Active
+                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                //show the next fieldset
+                next_fs.show();
+                //hide the current fieldset with style
+                current_fs.animate({
+                    opacity: 0
+                }, {
+                    step: function(now) {
+                        // for making fieldset appear animation
+                        opacity = 1 - now;
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({
+                            'opacity': opacity
+                        });
+                    },
+                    duration: 600
+                });
+            });
+            $(".previous").click(function() {
+                current_fs = $(this).parent();
+                previous_fs = $(this).parent().prev();
+
+                //Remove class active
+                $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+                //show the previous fieldset
+                previous_fs.show();
+
+                //hide the current fieldset with style
+                current_fs.animate({
+                    opacity: 0
+                }, {
+                    step: function(now) {
+                        // for making fileset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        previous_fs.css({
+                            'opacity': opacity
+                        });
+                    },
+                    duration: 600
+                });
+            });
+            $('.radio-group .radio').click(function() {
+                $(this).parent().find('.radio').removeClass('selected');
+                $(this).addClass('selected');
+            });
+            $(".submit").click(function(ev) {
+                ev.preventDefault();
+                return false;
+            });
+
+            $('.select2').select2({
+                width: 'resolve',
+                theme: 'classic'
+            });
         });
     </script>
 </body>

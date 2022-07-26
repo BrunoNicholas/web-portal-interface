@@ -265,6 +265,10 @@
     color: var(--denim-1);
 }
 
+.text-denim-1:focus {
+    color: var(--denim);
+}
+
 .text-denim-2 {
     color: var(--denim-2);
 }

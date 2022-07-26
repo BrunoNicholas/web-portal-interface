@@ -4,15 +4,16 @@
     font-family: "Arial-Bold";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/FontsFree-Net-arial-bold.ttf") format("truetype");
+    src: url("../fonts/FontsFree-Net-arial-bold.ttf") format("truetype");
 }
 
-@font-face {
+
+/* @font-face {
     font-family: "Arial-Regular";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/arial.otf") format("opentype");
-}
+    src: url("../fonts/arial.otf") format("opentype");
+} */
 
 html,
 body,
@@ -117,6 +118,44 @@ header .left-logo-sec-right img {
     white-space: nowrap;
 }
 
+.nav-breadcrumb {
+    background-color: var(--yellow-sunshine);
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    overflow-x: auto;
+}
+
+.nav-breadcrumb ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.nav-breadcrumb ul .nav-item {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-breadcrumb ul .nav-item::after {
+    content: '> ';
+    font-weight: 700;
+    margin: 0 .4rem;
+    color: var(--denim);
+}
+
+.nav-breadcrumb ul .nav-item:last-child::after {
+    content: '';
+}
+
+.nav-breadcrumb ul .nav-item a {
+    color: var(--denim) !important;
+}
+
 
 /* --- Edit Navbar --- */
 
@@ -138,7 +177,8 @@ header .left-logo-sec-right img {
 
 #navbar-section::-webkit-scrollbar,
 .no-frame-scroll::-webkit-scrollbar,
-.sec-3-card-body::-webkit-scrollbar {
+.sec-3-card-body::-webkit-scrollbar,
+.nav-breadcrumb::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
 }
@@ -393,6 +433,7 @@ img.single-logo {
     margin-top: 2vh;
     text-align: left;
     white-space: nowrap;
+    opacity: .7;
 }
 
 .home-bottoms-left .sticky-left-side-btn img {
@@ -525,13 +566,6 @@ img.single-logo {
     background-size: 100% auto;
 }
 
-
-/* 
-.other-video-images>div:first-child {
-    overflow-y: auto;
-}
-*/
-
 .other-video-images .col-12 {
     min-height: 4vh;
 }
@@ -554,6 +588,24 @@ img.single-logo {
 
 
 /* --- / Section 3 --- */
+
+.form-details {
+    min-height: 15vh;
+}
+
+#ura-nav .dropdown-toggle::after {
+    content: none;
+}
+
+.sunshine-sub-drop.show {
+    background-color: var(--yellow-sunshine);
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    position: absolute !important;
+    z-index: 10000 !important;
+    width: 100%;
+}
 
 
 /* --- section 4 --- */

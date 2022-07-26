@@ -664,9 +664,9 @@ img.single-logo {
     transition: all 0.4s;
   }
   
-  .hover-1 .hover-overlay {
+  /* .hover-1 .hover-overlay {
     background: rgba(0, 0, 0, 0.5);
-  }
+  } */
   
   .hover-1-description {
     transform: translateY(0.5rem);
@@ -695,7 +695,7 @@ img.single-logo {
 
 
   #image-gallery-section{
-    height:35em;    /* this in temporary */
+    height: 30em;  /* This is temporary */
     width: 100%;
     background:#FFFFFF;   
 }
@@ -709,6 +709,23 @@ img.single-logo {
 #image-gallery-section .gallery-breadcrumb li a{
   text-decoration: none;
 
+}
+
+#image-gallery-section .img-gallery-menu{
+    background: #D3D3D3;
+  
+  }
+
+.nav-link{
+    color: var(--ship-gray);
+}
+
+.nav-item-li{
+    background-color: var(--white);
+}
+.side-menu-sec>li {
+    min-width: 100%;
+    border-radius: 15px;   
 }
 
 
@@ -733,7 +750,7 @@ img.single-logo {
     pointer-events: auto;
 }
 .bookingModalDialog>div {
-    width: 600px;
+    width: 90%;
     position: relative;
     margin: 10% auto;
     padding: 5px 20px 13px 20px;
@@ -763,6 +780,65 @@ img.single-logo {
     color: #FFFFFF;
 }
 .appointment-modal > a{
+    text-decoration: none;
+
+}
+
+
+
+
+/* Client feedback Modal form */
+.feedbackModalDialog {
+    position: fixed;
+    font-family:inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.feedbackModalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.feedbackModalDialog>div {
+    width: 50%;
+    height:auto;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+.feedbackModalDialog .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.feedbackModalDialog .close:hover {
+    background: #dc3545;
+    color: #FFFFFF;
+}
+.feedback-modal > a{
     text-decoration: none;
 
 }

@@ -488,7 +488,7 @@ img.single-logo {
     left: 0;
     width: 3rem;
     height: 3rem;
-    border: 0.55rem solid #fff;
+    border: 0.55rem solid  var(--yellow-sunshine);
     border-radius: 50%;
     animation: pulse-border 1.5s linear infinite;
 }
@@ -497,6 +497,9 @@ img.single-logo {
 }
 .border-animation--border-2 {
     animation-delay: 1.5s;
+}
+.border-animation--border-3 {
+    animation-delay: 2s;
 }
 .card-img-top{
     object-fit: contain;

@@ -295,6 +295,9 @@
     color: var(--denim);
 }
 
+.text-yellow-sunshine {
+    color: var(--yellow-sunshine);
+}
 .bg-yellow-sunshine {
     background-color: var(--yellow-sunshine);
 }

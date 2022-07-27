@@ -606,7 +606,7 @@ img.single-logo {
     z-index: 3;
     border-color: var(--yellow-sunshine);
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(255, 238, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(255, 238, 0.25);
   }
   
   .accordion-header {
